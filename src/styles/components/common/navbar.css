@@ -29,6 +29,7 @@ nav {
   font-weight: 500;
   font-size: 0.75rem;
   text-transform: uppercase;
+  text-align: right;
 }
 
 .menu-container {
@@ -73,7 +74,7 @@ nav {
   padding: 0 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 .input-container input {
   width: 100%;
