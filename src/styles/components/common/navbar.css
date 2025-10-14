@@ -19,13 +19,13 @@ nav {
   padding: 1rem;
 }
 .logo-container img {
-  width: 4rem;
+  width: 4.5rem;
   height: auto;
   cursor: pointer;
 }
 
 .logo-container p {
-  color: #7f7f7f;
+  color: #00000080;
   font-weight: 500;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -87,7 +87,7 @@ nav {
   text-transform: uppercase;
 }
 .input-container input::placeholder {
-  color: #7f7f7f;
+  color: #00000080;
   text-transform: uppercase;
   font-family: var(--font-family);
   font-weight: 400;

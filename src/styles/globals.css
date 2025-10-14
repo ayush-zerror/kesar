@@ -17,3 +17,29 @@ body {
   background-color: var(--background-color);
   font-family: var(--font-family);
 }
+
+.button {
+  min-width: 150px;
+  max-width: 200px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  color: #000;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 6px; 
+  cursor: pointer;
+}
+
+.button p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: .6px;
+}
+
+.button svg{
+  font-size: 0.75rem;
+}
