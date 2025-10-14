@@ -3,11 +3,15 @@ footer {
   padding: 1.5rem 4rem 0;
   font-size: 0.8rem;
   line-height: 22px;
+  font-family:para-regular;
+  font-weight: 400;
 }
 footer h5 {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 0.6rem;
+  font-family: para-bold;
 }
 footer a {
   text-decoration: none;
@@ -91,7 +95,9 @@ footer a {
   border-top: 1px solid #ff7006;
   color: #00000080;
 }
-
+#footer-btm .footer-left span{
+  font-weight: 800;
+}
 #footer-btm .footer-right {
   display: flex;
   justify-content: space-between;
