@@ -1,6 +1,6 @@
 import React from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-
+import { IoIosCheckmarkCircle } from "react-icons/io";
 const ProductInformation = () => {
   return (
     <div id="product_info_section">
@@ -21,6 +21,27 @@ const ProductInformation = () => {
           <div className="product_title_box">
             <h5>KPL Blue 7003 D</h5>
             <p>General redder grade with 10% pigment loading</p>
+          </div>
+          <div className="product_tags_container">
+            <div className="product_card_desc">
+              <span>PB 15.0</span>
+              <span>Ink</span>
+            </div>
+            <div className="product_application">
+              <span>Application:</span>
+              <span>
+                <IoIosCheckmarkCircle /> NC - PU
+              </span>
+              <span>
+                <IoIosCheckmarkCircle /> NC Alcohol
+              </span>
+              <span>
+                <IoIosCheckmarkCircle /> NC Alcohol
+              </span>
+              <span>
+                <IoIosCheckmarkCircle /> Vinyl - EVA
+              </span>
+            </div>
           </div>
         </div>
       </div>
