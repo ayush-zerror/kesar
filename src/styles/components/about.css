@@ -76,18 +76,18 @@
   gap: 1rem;
   position: relative;
 }
-.about_info_card::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 0.1vw;
-    height: 20%;
-    background-color: #FF7006;
+.about_info_card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 0.1vw;
+  height: 20%;
+  background-color: #ff7006;
 }
-.about_info_card:last-child::after{
-    display: none;
+.about_info_card:last-child::after {
+  display: none;
 }
 #about_info_container img {
   height: 1.5rem;
@@ -107,4 +107,141 @@
   letter-spacing: 0.5px;
   line-height: 1.4;
   color: #000000b3;
+}
+
+/* leadership_section */
+
+#leadership_section {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+#leadership_section_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+}
+
+#leadership_section_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#leadership_section_header h4 {
+  font-family: heading-medium;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #000000b3;
+  margin-bottom: 0.5rem;
+}
+#leadership_section_header p {
+  font-family: para-regular;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #000000b3;
+  margin-bottom: 2.5rem;
+}
+
+#leadership_section_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items:stretch;
+}
+
+.leadership_section_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  height: 100%;
+}
+.leadership_section_card.last{
+    gap: 2rem;
+}
+.leader_profile_wrap {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.leader_profile {
+  width: 100px;
+  height: 100px;
+  background-color: #ff7006;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.leadership_section_card.last .leader_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leadership_section_card:nth-child(3) .leader_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_name p {
+  font-family: para-bold;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin-bottom: 0.1rem;
+}
+.profile_name span {
+  font-family: para-regular;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #00000080;
+}
+.leadership_section_card.last .mentor{
+      font-family: para-regular;
+  font-weight: 400;
+  font-size: .7rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #ff7006;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.leadership_section_card.last img{
+    width: 1.8rem;
+    height: auto;
+}
+.leadership_section_card:nth-child(3) img{
+     width: 1.8rem;
+    height: auto;
+}
+.leader_profile img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.leader_description {
+  padding-left: calc(100px + 1rem);
+  font-family: para-bold;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin-bottom: 0.1rem;
+  width: 90%;
 }
