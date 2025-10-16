@@ -45,8 +45,9 @@ body {
 
 .button {
   min-width: 180px;
+  height: fit-content;
   width: fit-content;
-  padding: 1rem 1.5rem;
+  padding: 1rem ;
   background-color: white;
   border-radius: 10px;
   color: #000;
@@ -59,12 +60,22 @@ body {
   border: 1px solid #00000033;
 }
 
+.button.orange{
+  color: #FF7006;
+  border: 1px solid #FF7006;
+
+}
+.button.fit{
+  min-width: fit-content !important;
+}
+
 .button h6 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   line-height: 1;
   margin-top: 0.6px;
   font-family: para-regular;
+  letter-spacing: .8px;
 }
 
 .button svg {
