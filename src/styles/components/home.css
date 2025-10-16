@@ -568,14 +568,14 @@
   justify-content: space-between;
   padding: 1.5rem;
 }
-.latest_news_card_dets h5{
+.latest_news_card_dets h5 {
   font-family: para-bold;
   font-weight: 900;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
   color: #000000cc;
   width: 80%;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 .latest_news_card_dets p {
   font-family: para-regular;
@@ -595,4 +595,94 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* gallery_section */
+
+#gallery_section {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+#gallery_section_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #e8e8e8;
+  padding: 2.5rem 2rem;
+}
+
+#gallery_section_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#gallery_section_header h4 {
+  font-family: heading-medium;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #000000b3;
+  margin-bottom: 0.5rem;
+}
+#gallery_section_header p {
+  font-family: para-regular;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #000000b3;
+  margin-bottom: 2.5rem;
+}
+
+#gallery_section_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.gallery_section_card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+.gallery_section_card img {
+  width: auto;
+  height: 200px;
+  display: block;
+  filter: grayscale(1);
+}
+.gallery_section_card:nth-child(1) img {
+  filter: grayscale(0);
+}
+.gallery_section_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.gallery_section_card_overlay .overlay_tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: white;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1;
+  font-family: para-medium;
+  letter-spacing: 0.8px;
+}
+
+.gallery_section_card:nth-child(1) .overlay_tab{
+      background-color: #ff7006;
+  color: white;
 }

@@ -1,4 +1,5 @@
 import ApplicationSection from '@/components/home/ApplicationSection'
+import GallerySection from '@/components/home/GallerySection'
 import HeroSection from '@/components/home/HeroSection'
 import Integrated from '@/components/home/Integrated'
 import LatestNews from '@/components/home/LatestNews'
@@ -18,7 +19,7 @@ const Home = () => {
       <ApplicationSection />
       <ProductSection title={"Sustainability Snapshot"} des={"Committed to responsible manufacturing with measurable environmental stewardship."} btn={"Explore our global presence"} />
       <LatestNews />
-
+      <GallerySection />
     </>
   )
 }
