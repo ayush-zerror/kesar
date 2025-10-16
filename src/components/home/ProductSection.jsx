@@ -2,19 +2,18 @@ import React from "react";
 import Button from "../common/Button";
 import ProductCard from "./ProductCard";
 
-const ProductSection = () => {
+const ProductSection = ({title,des,btn}) => {
   return (
     <div id="product_section">
       <div id="product_section_container">
         <div id="product_section_title">
           <div>
-            <h4>Our Product</h4>
+            <h4>{title}</h4>
             <p>
-              Comprehensive range of Phthalocyanine Pigments Blue and Green
-              engineered for your specific applications.
+             {des}
             </p>
           </div>
-          <Button title={"Explore more Products"} />
+          <Button title={btn} />
         </div>
        <div className="product_slider">
         <ProductCard/>

@@ -13,8 +13,10 @@ const Home = () => {
       <ProductFinder />
       <LogoSection/>
       <Integrated/>
-      <ProductSection/>
+      <ProductSection title={"Our Product"} des={"Comprehensive range of Phthalocyanine Pigments Blue and Green engineered for your specific applications."} btn={"Explore more Products"}/>
       <ApplicationSection/>
+      <ProductSection title={"Sustainability Snapshot"} des={"Committed to responsible manufacturing with measurable environmental stewardship."} btn={"Explore our global presence"}/>
+
     </>
   )
 }
