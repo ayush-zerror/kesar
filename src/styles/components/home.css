@@ -330,7 +330,19 @@
   display: flex;
   gap: 1rem;
   overflow: hidden;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
 }
+.product_slider::-webkit-scrollbar {
+  height: 3px; 
+  background-color: #0000001A;
+}
+
+.product_slider::-webkit-scrollbar-thumb {
+  background-color: #ff7006;
+  border-radius: 10px;
+}
+
 .product_card {
   width: 400px;
   height: 500px;
