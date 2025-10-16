@@ -333,6 +333,7 @@
 }
 .product_card {
   width: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -501,6 +502,80 @@
   border-radius: 50%;
 }
 
+/* sustainable_section */
+
+#sustainable_section {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+#sustainable_section_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #e8e8e8;
+  padding: 2.5rem 2rem;
+}
+
+#sustainable_section_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sustainable_section_header h4 {
+  font-family: heading-medium;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #000000b3;
+  margin-bottom: 0.5rem;
+}
+#sustainable_section_header p {
+  font-family: para-regular;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #000000b3;
+  margin-bottom: 2.5rem;
+}
+#sustainable_section_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.sustainable_section_card{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:2.5rem 1.5rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.sustainable_section_card img{
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+}
+.sustainable_section_card h5 {
+  font-family: para-bold;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+.sustainable_section_card p {
+  font-family: para-medium;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  color: #0000004D;
+  width: 50%;
+  text-align: center;
+}
 /* latest news  section  */
 
 #latest_news_section {
