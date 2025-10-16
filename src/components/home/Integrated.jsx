@@ -14,18 +14,18 @@ const Integrated = () => {
             MAP / Zinc Sulphate - closing the loop for repeatable shade, stable
             pricing, and lower waste.
           </p>
-          <Button title={"Learn More ABout our Integration "} />
+          <Button title={"Learn More About our Integration "}/>
         </div>
         <div id="integrated_process">
-          <div className="process">
-            <span>Backward Integration</span>
-          </div>
-          <div className="process">
-            <span>Phthalocyanine Pigments</span>
-          </div>
-          <div className="process">
-            <span>Forward Integration</span>
-          </div>
+            <div className="process">
+                <span>Backward Integration</span>
+            </div>
+            <div className="process">
+                <span>Phthalocyanine Pigments</span>
+            </div>
+            <div className="process">
+                <span>Forward Integration</span>
+            </div>
         </div>
       </div>
     </div>

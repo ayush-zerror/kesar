@@ -1,3 +1,4 @@
+import ApplicationSection from '@/components/home/ApplicationSection'
 import HeroSection from '@/components/home/HeroSection'
 import Integrated from '@/components/home/Integrated'
 import LogoSection from '@/components/home/LogoSection'
@@ -13,6 +14,7 @@ const Home = () => {
       <LogoSection/>
       <Integrated/>
       <ProductSection/>
+      <ApplicationSection/>
     </>
   )
 }
