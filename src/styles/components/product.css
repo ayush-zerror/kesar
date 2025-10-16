@@ -129,7 +129,7 @@
 .product_list_card_name {
   font-family: para-bold;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.5px;
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 0.5rem;
@@ -155,3 +155,4 @@
   border-radius: 5px;
   color: #00000080;
 }
+

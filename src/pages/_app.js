@@ -7,6 +7,7 @@ import "@/styles/components/common/footer.css";
 import "@/styles/components/home.css";
 import "@/styles/components/about.css";
 import "@/styles/components/product.css";
+import "@/styles/components/productDetail.css";
 
 
 export default function App({ Component, pageProps }) {
