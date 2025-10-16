@@ -1,9 +1,17 @@
-import React from 'react'
+import ProductHero from "@/components/product/ProductHero";
+import ProductList from "@/components/product/ProductList";
+import React from "react";
 
 const Product = () => {
   return (
-    <div>Product</div>
-  )
-}
+    <>
+      <ProductHero />
+      <ProductList/>
+      <ProductList/>
+      <ProductList/>
+      <ProductList/>
+    </>
+  );
+};
 
-export default Product
+export default Product;
