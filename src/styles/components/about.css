@@ -50,3 +50,18 @@
   vertical-align: middle;
   letter-spacing: 0.5px;
 }
+
+
+/* about_info */
+
+#about_info{
+    width: 100%;
+    padding: .5rem 1.5rem;
+}
+
+#about_info_container{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+}

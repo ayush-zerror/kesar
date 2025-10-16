@@ -6,7 +6,7 @@
 #home_hero_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background: linear-gradient(-45deg, #fff7f1, #f1f5ff);
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@
 #product_finder_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #ffffff;
   padding: 2.5rem 2rem;
 }
@@ -212,7 +212,7 @@
 #integrated_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #ffffff;
   padding: 2.5rem 2rem;
   display: flex;
@@ -301,7 +301,7 @@
 #product_section_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #e8e8e8;
   padding: 2.5rem 2rem;
 }
@@ -402,7 +402,7 @@
 #application_section_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #fff;
   padding: 2.5rem 2rem;
 }
@@ -512,7 +512,7 @@
 #sustainable_section_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #e8e8e8;
   padding: 2.5rem 2rem;
 }
@@ -538,26 +538,26 @@
   color: #000000b3;
   margin-bottom: 2.5rem;
 }
-#sustainable_section_cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
+#sustainable_section_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-.sustainable_section_card{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding:2.5rem 1.5rem;
-    background-color: #fff;
-    border-radius: 20px;
+.sustainable_section_card {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 20px;
 }
-.sustainable_section_card img{
-    width: auto;
-    height: 150px;
-    object-fit: contain;
+.sustainable_section_card img {
+  width: auto;
+  height: 150px;
+  object-fit: contain;
 }
 .sustainable_section_card h5 {
   font-family: para-bold;
@@ -572,7 +572,7 @@
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   line-height: 1.3;
-  color: #0000004D;
+  color: #0000004d;
   width: 50%;
   text-align: center;
 }
@@ -586,7 +586,7 @@
 #latest_news_section_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #fff;
   padding: 2.5rem 2rem;
   display: flex;
@@ -682,7 +682,7 @@
 #gallery_section_container {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
   background-color: #e8e8e8;
   padding: 2.5rem 2rem;
 }
@@ -757,7 +757,7 @@
   letter-spacing: 0.8px;
 }
 
-.gallery_section_card:nth-child(1) .overlay_tab{
-      background-color: #ff7006;
+.gallery_section_card:nth-child(1) .overlay_tab {
+  background-color: #ff7006;
   color: white;
 }
