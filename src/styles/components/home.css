@@ -428,8 +428,75 @@
   margin-bottom: 2.5rem;
 }
 
-#application_section_cards{
-    width: 100%;
-    grid-template-columns: repeat(2 ,1fr);
-    gap: 1rem;
+#application_section_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.application_card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.application_card_title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: para-bold;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #000000cc;
+}
+.application_card_title img {
+  width: 1rem;
+  height: auto;
+}
+
+.application_details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.application_details p {
+  font-family: para-medium;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #000000b3;
+  width: 80%;
+  margin: .5rem 0;
+}
+
+.application_details .tags {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.application_details .tag {
+  padding: 0.3rem .8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  border-radius: 80px;
+  font-family: para-regular;
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: #000000;
+}
+.application_details .tag span {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ff7006;
+  border-radius: 50%;
 }
