@@ -44,9 +44,9 @@ body {
 }
 
 .button {
-  min-width: 150px;
-  max-width: 200px;
-  padding: 1rem;
+  min-width: 180px;
+  width: fit-content;
+  padding: 1rem 1.5rem;
   background-color: white;
   border-radius: 10px;
   color: #000;
@@ -59,11 +59,12 @@ body {
   border: 1px solid #00000033;
 }
 
-.button p {
+.button h6 {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1;
   margin-top: 0.6px;
+  font-family: para-regular;
 }
 
 .button svg {

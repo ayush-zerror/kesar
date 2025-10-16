@@ -111,6 +111,7 @@
   font-weight: 500;
   font-size: 2.8rem;
   color: #000000b3;
+  margin-bottom: .5rem;
 }
 #product_finder_container p {
   font-family: para-regular;
@@ -225,6 +226,7 @@
   font-weight: 500;
   font-size: 2.8rem;
   color: #000000b3;
+  margin-bottom: .5rem;
 }
 #integrated_details p {
   font-family: para-regular;
@@ -233,6 +235,7 @@
   letter-spacing: 0.5px;
   line-height: 1.4;
   color: #000000b3;
+  margin-bottom: 2.5rem;
 }
 
 #integrated_process {

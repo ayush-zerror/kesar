@@ -5,13 +5,21 @@ import { PiEnvelopeFill, PiPhoneFill, PiTwitterLogoFill } from "react-icons/pi";
 import { RiFacebookFill, RiInstagramFill } from "react-icons/ri";
 import { BsLinkedin } from "react-icons/bs";
 import { GrNext } from "react-icons/gr";
+import Button from "./Button";
 
 const Footer = () => {
   return (
     <footer>
       <div id="footer-top">
         <div className="footer-left">
-          <Link href="/"><Image src="/kesar-logo.png" alt="Logo" width={1000} height={1000} /></Link>
+          <Link href="/">
+            <Image
+              src="/kesar-logo.png"
+              alt="Logo"
+              width={1000}
+              height={1000}
+            />
+          </Link>
           <p>
             India's leading manufacturer of phthalocyanine blue pigments, <br />
             serving customers globally with integrated value chain solutions.
@@ -89,10 +97,7 @@ const Footer = () => {
           </p>
           <div className="newsletter">
             <input type="text" placeholder="Enter your email id" />
-            <div className="button">
-              <p>Subscribe</p>
-              <GrNext />
-            </div>
+            <Button title={"Subscribe"} />
           </div>
         </div>
       </div>
