@@ -1,6 +1,7 @@
 import React from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 const ProductInformation = () => {
   return (
     <div id="product_info_section">
@@ -41,6 +42,20 @@ const ProductInformation = () => {
               <span>
                 <IoIosCheckmarkCircle /> Vinyl - EVA
               </span>
+            </div>
+            <div className="product_btns">
+                <button>
+                    <span>Request Quotation</span>
+                    <MdArrowOutward />
+                </button>
+                 <button>
+                    <span>MSDS Download</span>
+                    <MdOutlineFileDownload />
+                </button>
+                 <button>
+                    <span>TDS Download</span>
+                    <MdOutlineFileDownload />
+                </button>
             </div>
           </div>
         </div>

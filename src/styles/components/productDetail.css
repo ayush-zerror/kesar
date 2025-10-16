@@ -78,7 +78,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .product_application {
@@ -96,10 +96,39 @@
   letter-spacing: 0.5px;
   color: #000;
 }
-.product_application span svg{
-    color: #FF7006;
+.product_application span svg {
+  color: #ff7006;
 }
 .product_application span:nth-child(1) {
   font-family: para-regular;
   font-weight: 400;
+}
+
+.product_btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product_btns button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  width: 220px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #004dff;
+  color: #004dff;
+  background-color: transparent;
+  font-family: para-bold;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.product_btns button:nth-child(1){
+     color: #fff;
+  background-color: #004dff;
 }
