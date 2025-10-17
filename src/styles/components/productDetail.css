@@ -18,6 +18,9 @@
   align-items: center;
   justify-content: space-between;
 }
+#change_product a{
+  text-decoration: none;
+}
 
 #change_product span {
   display: flex;

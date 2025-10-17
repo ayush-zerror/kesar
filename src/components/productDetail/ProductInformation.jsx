@@ -1,19 +1,28 @@
+import Link from "next/link";
 import React from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 
-const ProductInformation = ({ product }) => {
+const ProductInformation = ({ product, previousSlug, nextSlug }) => {
   return (
     <div id="product_info_section">
       <div id="product_info_section_container">
         <div id="change_product">
-          <span>
-            <GrFormPrevious /> Previous
-          </span>
-          <span>
-            Next <GrFormNext />
-          </span>
+          {previousSlug && (
+            <Link href={`/products/${previousSlug}`}>
+              <span>
+                <GrFormPrevious /> Previous
+              </span>
+            </Link>
+          )}
+          {nextSlug && (
+            <Link href={`/products/${nextSlug}`}>
+              <span>
+                Next <GrFormNext />
+              </span>
+            </Link>
+          )}
         </div>
 
         <div id="product_content">

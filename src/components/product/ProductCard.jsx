@@ -37,7 +37,7 @@ const ProductCard = ({ product, currentSlug }) => {
   return isActive ? (
     content
   ) : (
-    <Link href={`/products/${product.slug}`}>{content}</Link>
+    <Link className="product_link" href={`/products/${product.slug}`}>{content}</Link>
   );
 };
 

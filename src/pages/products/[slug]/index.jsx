@@ -3,14 +3,21 @@ import ProductInformation from "@/components/productDetail/ProductInformation";
 import { categories } from "@/helpers/productData";
 import React from "react";
 
-const ProductDetail = ({ product, categoriesData }) => {
+const ProductDetail = ({ product, categoriesData, previousSlug, nextSlug }) => {
   return (
     <>
-      <ProductInformation product={product} />
+      <ProductInformation
+        product={product}
+        previousSlug={previousSlug}
+        nextSlug={nextSlug}
+      />
       <ProductList categories={categoriesData} currentSlug={product?.slug} />
     </>
   );
 };
+
+export default ProductDetail;
+
 export const getStaticPaths = async () => {
   const paths = categories.flatMap((category) =>
     category.products.map((product) => ({
@@ -27,25 +34,27 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const { slug } = params;
 
-  let productData = null;
-  for (const category of categories) {
-    const product = category.products.find((p) => p.slug === slug);
-    if (product) {
-      productData = product;
-      break;
-    }
-  }
+  // Flatten all products
+  const allProducts = categories.flatMap((category) => category.products);
 
-  if (!productData) {
-    return { notFound: true };
-  }
+  // Find current product index
+  const currentIndex = allProducts.findIndex((p) => p.slug === slug);
+  if (currentIndex === -1) return { notFound: true };
+
+  const productData = allProducts[currentIndex];
+
+  // Circular navigation
+  const previousIndex =
+    currentIndex === 0 ? allProducts.length - 1 : currentIndex - 1;
+  const nextIndex =
+    currentIndex === allProducts.length - 1 ? 0 : currentIndex + 1;
 
   return {
     props: {
       product: productData,
       categoriesData: categories,
+      previousSlug: allProducts[previousIndex].slug,
+      nextSlug: allProducts[nextIndex].slug,
     },
   };
 };
-
-export default ProductDetail;
