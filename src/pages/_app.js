@@ -9,6 +9,7 @@ import "@/styles/components/about.css";
 import "@/styles/components/product.css";
 import "@/styles/components/productDetail.css";
 import "@/styles/components/contact.css";
+import "@/styles/components/gallery.css";
 
 
 export default function App({ Component, pageProps }) {
