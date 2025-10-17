@@ -105,6 +105,14 @@
   border-radius: 20px;
   text-decoration: none;
 }
+.product_list_card.active{
+  filter: grayscale(1);
+  box-shadow: 0 4 10 0 #00000033;
+  cursor: not-allowed;
+}
+.product_link{
+  text-decoration: none;
+}
 .product_img_wrap {
   width: 130px;
   height: 130px;

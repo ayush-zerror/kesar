@@ -2,18 +2,20 @@ import React from "react";
 import Button from "../common/Button";
 import Link from "next/link";
 
-const ProductCard = ({ product }) => {
-  return (
-    <Link href={`/products/${product.slug}`} className="product_list_card">
+const ProductCard = ({ product, currentSlug }) => {
+  const isActive = product.slug === currentSlug;
+
+  const content = (
+    <div className={`product_list_card ${isActive ? "active" : ""}`}>
       <div className="product_img_wrap">
         <div className="product_sample_container">
           {product.shades.map((shade, idx) => (
-              <div
-                key={idx}
-                className={`product_sample${idx + 1}`}
-                style={{ backgroundColor: shade }}
-              ></div>
-            ))}
+            <div
+              key={idx}
+              className={`product_sample${idx + 1}`}
+              style={{ backgroundColor: shade }}
+            ></div>
+          ))}
         </div>
       </div>
       <div className="product_list_dets">
@@ -25,10 +27,17 @@ const ProductCard = ({ product }) => {
             ))}
           </div>
         </div>
-        <Button title={"More"} color={"orange"} width={"fit"} />
+        <Button
+          title={isActive ? "Current" : "More"}
+          color={isActive ? "gray" : "orange"}
+          width="fit"
+          disabled={isActive}
+        />
       </div>
-    </Link>
+    </div>
   );
+
+  return isActive ? content : <Link className="product_link" href={`/products/${product.slug}`}>{content}</Link>;
 };
 
 export default ProductCard;

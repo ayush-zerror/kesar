@@ -7,7 +7,7 @@ const ProductDetail = ({ product, categoriesData }) => {
   return (
     <>
       <ProductInformation product={product} />
-      <ProductList categories={categoriesData} />
+      <ProductList categories={categoriesData} currentSlug={product.slug}/>
     </>
   );
 };
