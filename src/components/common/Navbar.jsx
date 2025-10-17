@@ -3,24 +3,32 @@ import React from "react";
 import { BiSearch } from "react-icons/bi";
 import Menu from "./Menu";
 import Link from "next/link";
+import RequestBtn from "./RequestBtn";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="logo-container">
-       <Link href="/"><Image src="/kesar-logo.webp" alt="Kesar" priority width={1000} height={1000} /></Link>
+        <Link href="/">
+          <Image
+            src="/kesar-logo.webp"
+            alt="Kesar"
+            priority
+            width={1000}
+            height={1000}
+          />
+        </Link>
         <p>
           Phthalocyanine <br /> Pigments
         </p>
       </div>
-     <Menu/>
+      <Menu />
       <div className="input-container">
         <BiSearch />
         <input type="text" placeholder="Search Products here" />
       </div>
-      <div className="request-btn">
-        <p>Request Quotation</p>
-      </div>
+      <RequestBtn/>
+      
     </nav>
   );
 };

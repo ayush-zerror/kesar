@@ -110,6 +110,9 @@
   box-shadow: 0 4 10 0 #00000033;
   cursor: not-allowed;
 }
+.product_list_card.active .button{
+  cursor: not-allowed;
+}
 .product_link{
   text-decoration: none;
 }

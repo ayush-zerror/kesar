@@ -18,7 +18,6 @@ const Button = ({ title, color, width, link, onClick }) => {
     <div
       onClick={handleClick}
       className={`button ${color ? color : ""} ${width ? width : ""}`}
-      style={{ cursor: "pointer" }}
     >
       <h6>{title}</h6>
       <GrNext />
