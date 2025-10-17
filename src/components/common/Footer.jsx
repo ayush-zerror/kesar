@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="footer-left">
           <Link href="/">
             <Image
-              src="/kesar-logo.png"
-              alt="Logo"
+              src="/kesar-logo.webp"
+              alt="Kesar"
               width={1000}
               height={1000}
             />

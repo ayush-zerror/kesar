@@ -22,7 +22,7 @@ const Sustainability = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/waste.png"
+              src="/images/home/waste.webp"
               alt="image"
             />
             <p>Circular processes reducing environmental impact</p>
@@ -32,7 +32,7 @@ const Sustainability = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/stewardship.png"
+              src="/images/home/stewardship.webp"
               alt="image"
             />
             <p>Measurable ESG goals with quarterly tracking</p>
@@ -42,7 +42,7 @@ const Sustainability = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/circular.png"
+              src="/images/home/circular.webp"
               alt="image"
             />
             <p>By-products valorised into valuable end products</p>

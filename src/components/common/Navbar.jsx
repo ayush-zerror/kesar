@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo-container">
-       <Link href="/"><Image src="/kesar-logo.png" alt="Logo" width={1000} height={1000} /></Link>
+       <Link href="/"><Image src="/kesar-logo.webp" alt="Kesar" priority width={1000} height={1000} /></Link>
         <p>
           Phthalocyanine <br /> Pigments
         </p>

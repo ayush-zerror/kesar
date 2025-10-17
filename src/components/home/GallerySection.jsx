@@ -23,7 +23,7 @@ const GallerySection = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/gallery1.png"
+              src="/images/home/gallery1.webp"
               alt="image"
             />
             <div className="gallery_section_card_overlay">
@@ -37,7 +37,7 @@ const GallerySection = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/gallery2.png"
+              src="/images/home/gallery2.webp"
               alt="image"
             />
             <div className="gallery_section_card_overlay">
@@ -51,7 +51,7 @@ const GallerySection = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/gallery3.png"
+              src="/images/home/gallery3.webp"
               alt="image"
             />
             <div className="gallery_section_card_overlay">

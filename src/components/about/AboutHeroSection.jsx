@@ -8,8 +8,9 @@ const AboutHeroSection = () => {
         <Image
           width={1000}
           height={1000}
-          src="/images/about/about-banner.jpg"
+          src="/images/about/about-banner.webp"
           alt="about-banner"
+          priority
         />
         <div id="about_hero_overlay">
           <h2>Think Phthalocyanine. <br /> Think Kesar.</h2>

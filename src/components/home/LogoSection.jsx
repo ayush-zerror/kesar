@@ -3,27 +3,27 @@ import React from "react";
 
 const logoData = [
   {
-    src: "/images/home/logo1.png",
+    src: "/images/home/logo1.webp",
     text: "Annual Capacity (Tons)",
   },
   {
-    src: "/images/home/logo2.png",
+    src: "/images/home/logo2.webp",
     text: "5 Integrated Facilities",
   },
   {
-    src: "/images/home/logo3.png",
+    src: "/images/home/logo3.webp",
     text: "ISO & REACH",
   },
   {
-    src: "/images/home/logo4.png",
+    src: "/images/home/logo4.webp",
     text: "In-house Power",
   },
   {
-    src: "/images/home/logo5.png",
+    src: "/images/home/logo5.webp",
     text: "Backward Integration",
   },
   {
-    src: "/images/home/logo6.png",
+    src: "/images/home/logo6.webp",
     text: "Forward Integration",
   },
 ];

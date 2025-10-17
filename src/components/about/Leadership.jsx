@@ -11,7 +11,7 @@ const Leadership = () => {
       position: "Founder, Chairman & Managing Director",
       description:
         "Law graduate & Chartered Accountant. Champion of cost-effective, sustainable manufacturing and timely dispatches.",
-      image: "/images/about/dinesh.png",
+      image: "/images/about/dinesh.webp",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Leadership = () => {
       description:
         `B.Tech. (Dyestuff Technology), ICT (UDCT), hands‑on experience across dyes, pigments and intermediates,
 Leads Technical ‑ Commercial Strategy and International Growth.`,
-      image: "/images/about/shreyas.png",
+      image: "/images/about/shreyas.webp",
     },
     {
       id: 3,

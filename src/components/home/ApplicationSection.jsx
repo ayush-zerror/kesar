@@ -7,7 +7,7 @@ const ApplicationSection = () => {
     {
       id: 1,
       title: "Inks",
-      image: "/images/home/ink.png",
+      image: "/images/home/ink.webp",
       description:
         "High-quality Phthalocyanine pigments for printing inks with excellent color strength and stability",
       tags: ["Color Strength", "Lightfastness", "Chemical Resistance"],
@@ -15,7 +15,7 @@ const ApplicationSection = () => {
     {
       id: 2,
       title: "Coatings",
-      image: "/images/home/coatings.png",
+      image: "/images/home/coatings.webp",
       description:
         "Durable Phthalocyanine pigments for industrial and architectural coatings applications",
       tags: ["Weather Resistance", "UV Stability", "Heat Resistance"],
@@ -23,7 +23,7 @@ const ApplicationSection = () => {
     {
       id: 3,
       title: "Plastics (Master Batch)",
-      image: "/images/home/plastic.png",
+      image: "/images/home/plastic.webp",
       description:
         "Heat-stable pigments for polymer applications and processing",
       tags: ["Heat Stability", "Lightfastness", "Chemical Resistance"],
@@ -31,7 +31,7 @@ const ApplicationSection = () => {
     {
       id: 4,
       title: "Offset",
-      image: "/images/home/offset.png",
+      image: "/images/home/offset.webp",
       description:
         "Concentrated Phthalocyanine pigment preparations for plastic coloration",
       tags: ["Weather Resistance", "UV Stability", "Heat Resistance"],

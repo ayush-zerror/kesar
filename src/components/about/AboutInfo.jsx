@@ -9,7 +9,7 @@ const AboutInfo = () => {
           <Image
             width={1000}
             height={1000}
-            src="/images/about/logo1.png"
+            src="/images/about/logo1.webp"
             alt="logo"
           />
           <h5>Manufacturing Units</h5>
@@ -19,7 +19,7 @@ const AboutInfo = () => {
           <Image
             width={1000}
             height={1000}
-            src="/images/about/logo2.png"
+            src="/images/about/logo2.webp"
             alt="logo"
           />
           <h5>Certifications</h5>
@@ -29,7 +29,7 @@ const AboutInfo = () => {
           <Image
             width={1000}
             height={1000}
-            src="/images/about/logo3.png"
+            src="/images/about/logo3.webp"
             alt="logo"
           />
           <h5>Employees</h5>
@@ -39,7 +39,7 @@ const AboutInfo = () => {
           <Image
             width={1000}
             height={1000}
-            src="/images/about/logo4.png"
+            src="/images/about/logo4.webp"
             alt="logo"
           />
           <h5>Headquarters</h5>
@@ -49,7 +49,7 @@ const AboutInfo = () => {
           <Image
             width={1000}
             height={1000}
-            src="/images/about/logo5.png"
+            src="/images/about/logo5.webp"
             alt="logo"
           />
           <h5>Manufacturing Plant</h5>

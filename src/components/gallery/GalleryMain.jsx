@@ -4,18 +4,18 @@ import React from "react";
 const GalleryMain = () => {
   // Step 1: Create data array
   const galleryData = [
-    { src: "/images/gallery/image1.png", title: "Activated - CPC" },
-    { src: "/images/gallery/image2.png", title: "Aminated" },
-    { src: "/images/gallery/image3.png", title: "Beta-Blue-15-3" },
-    { src: "/images/gallery/image4.jpg", title: "Beta-CPC-15" },
-    { src: "/images/gallery/image5.jpg", title: "CPC-Blue-15-0" },
-    { src: "/images/gallery/image6.jpg", title: "CPC-Blue-15-1" },
-    { src: "/images/gallery/image7.jpg", title: "CPC-Crude" },
-    { src: "/images/gallery/image8.jpg", title: "CPC-Crude2" },
-    { src: "/images/gallery/image9.jpg", title: "CPC-Crude4" },
-    { src: "/images/gallery/image10.jpg", title: "Nitrated-N" },
-    { src: "/images/gallery/image11.jpg", title: "RM" },
-    { src: "/images/gallery/image12.jpg", title: "Sulphonated-N" },
+    { src: "/images/gallery/image1.webp", title: "Activated - CPC" },
+    { src: "/images/gallery/image2.webp", title: "Aminated" },
+    { src: "/images/gallery/image3.webp", title: "Beta-Blue-15-3" },
+    { src: "/images/gallery/image4.webp", title: "Beta-CPC-15" },
+    { src: "/images/gallery/image5.webp", title: "CPC-Blue-15-0" },
+    { src: "/images/gallery/image6.webp", title: "CPC-Blue-15-1" },
+    { src: "/images/gallery/image7.webp", title: "CPC-Crude" },
+    { src: "/images/gallery/image8.webp", title: "CPC-Crude2" },
+    { src: "/images/gallery/image9.webp", title: "CPC-Crude4" },
+    { src: "/images/gallery/image10.webp", title: "Nitrated-N" },
+    { src: "/images/gallery/image11.webp", title: "RM" },
+    { src: "/images/gallery/image12.webp", title: "Sulphonated-N" },
   ];
 
   return (

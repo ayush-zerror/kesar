@@ -19,35 +19,35 @@ const HeroSection = () => {
             id="circle1"
             width={1000}
             height={1000}
-            src="/images/home/blue-circle1.png"
+            src="/images/home/blue-circle1.webp"
             alt="blue-circle"
           />
           <Image
             id="circle2"
             width={1000}
             height={1000}
-            src="/images/home/blue-circle1.png"
+            src="/images/home/blue-circle1.webp"
             alt="blue-circle"
           />
            <Image
             id="circle3"
             width={1000}
             height={1000}
-            src="/images/home/blue-circle1.png"
+            src="/images/home/blue-circle1.webp"
             alt="blue-circle"
           />
           <Image
             id="circle4"
             width={1000}
             height={1000}
-            src="/images/home/blue-circle1.png"
+            src="/images/home/blue-circle1.webp"
             alt="blue-circle"
           />
           <Image
             id="circle5"
             width={1000}
             height={1000}
-            src="/images/home/blue-circle1.png"
+            src="/images/home/blue-circle1.webp"
             alt="blue-circle"
           />
         </div>

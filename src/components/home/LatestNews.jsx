@@ -45,7 +45,7 @@ const LatestNews = () => {
             <Image
               width={1000}
               height={1000}
-              src="/images/home/news.png"
+              src="/images/home/news.webp"
               alt="image"
             />
           </div>

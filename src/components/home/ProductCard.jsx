@@ -15,7 +15,7 @@ const ProductCard = () => {
           <Image
             width={1000}
             height={1000}
-            src="/images/home/product.png"
+            src="/images/home/product.webp"
             alt="product"
           />
           <div className="product_info">
