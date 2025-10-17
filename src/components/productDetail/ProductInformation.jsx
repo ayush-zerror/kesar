@@ -19,7 +19,7 @@ const ProductInformation = ({ product }) => {
         <div id="product_content">
           {/* Product preview shades */}
           <div id="product_preview">
-            {product.shades.map((shade, idx) => (
+            {product?.shades?.map((shade, idx) => (
               <div
                 key={idx}
                 className="product_sample"
@@ -30,21 +30,21 @@ const ProductInformation = ({ product }) => {
 
           {/* Product title and description */}
           <div className="product_title_box">
-            <h5>{product.name}</h5>
-            <p>{product.desc}</p>
+            <h5>{product?.name}</h5>
+            <p>{product?.desc}</p>
           </div>
 
           {/* Tags and applications */}
           <div className="product_tags_container">
             <div className="product_card_desc">
-              {product.tags.map((tag, idx) => (
+              {product?.tags?.map((tag, idx) => (
                 <span key={idx}>{tag}</span>
               ))}
             </div>
 
             <div className="product_application">
               <span>Application:</span>
-              {product.application.map((app, idx) => (
+              {product?.application?.map((app, idx) => (
                 <span key={idx}>
                   <IoIosCheckmarkCircle /> {app}
                 </span>

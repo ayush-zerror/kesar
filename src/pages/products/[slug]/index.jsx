@@ -7,13 +7,11 @@ const ProductDetail = ({ product, categoriesData }) => {
   return (
     <>
       <ProductInformation product={product} />
-      <ProductList categories={categoriesData} currentSlug={product.slug}/>
+      <ProductList categories={categoriesData} currentSlug={product?.slug} />
     </>
   );
 };
-
 export const getStaticPaths = async () => {
-  // collect all product slugs
   const paths = categories.flatMap((category) =>
     category.products.map((product) => ({
       params: { slug: product.slug },
@@ -22,14 +20,13 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true, // or false if you want 404 for unknown
+    fallback: true, // still allows new slugs to render dynamically
   };
 };
 
 export const getStaticProps = async ({ params }) => {
   const { slug } = params;
 
-  // find the product by slug
   let productData = null;
   for (const category of categories) {
     const product = category.products.find((p) => p.slug === slug);
@@ -40,15 +37,13 @@ export const getStaticProps = async ({ params }) => {
   }
 
   if (!productData) {
-    return {
-      notFound: true,
-    };
+    return { notFound: true };
   }
 
   return {
     props: {
       product: productData,
-      categoriesData: categories, // pass categories for ProductList
+      categoriesData: categories,
     },
   };
 };

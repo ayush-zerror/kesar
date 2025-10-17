@@ -51,8 +51,8 @@ const ApplicationSection = () => {
           <Button title={"Explore more Products"} />
         </div>
         <div id="application_section_cards">
-          {applications.map((data ,index) => (
-            <ApplicationCard data={data} index={index} />
+          {applications.map((data, index) => (
+            <ApplicationCard key={index} data={data} index={index} />
           ))}
         </div>
       </div>
