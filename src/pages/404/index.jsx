@@ -10,9 +10,6 @@ const Page404 = () => {
         <p>
           Oops! The page you’re looking for doesn’t exist or has been moved.
         </p>
-        <Link href="/" className="back_home_btn">
-          Go Back Home
-        </Link>
       </div>
 
       <style jsx>{`

@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Menu = () => {
-  const pathname = usePathname(); 
+  const pathname = usePathname() || "/"; // fallback to "/" if null
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -32,7 +31,7 @@ const Menu = () => {
           {menuItems.map((item, index) => {
             const isActive =
               pathname === item.path ||
-              (item.path !== "/" && pathname.startsWith(item.path));
+              (item.path !== "/" && pathname?.startsWith(item.path));
             return (
               <li key={index} className={isActive ? "active" : ""}>
                 <Link href={item.path}>
