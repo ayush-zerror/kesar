@@ -6,31 +6,35 @@ const Layout = ({ children }) => {
   const layoutRef = useRef(null);
   const router = useRouter();
 
+  // Initial fade-in on first load
   useEffect(() => {
-    // On page mount (initial fade-in)
     gsap.fromTo(
       layoutRef.current,
       { autoAlpha: 0, y: 20 },
-      { autoAlpha: 1, y: 0, duration: 0.6, ease: "power2.out" }
+      { autoAlpha: 1, y: 0, duration: 0.8, ease: "power3.out" }
     );
   }, []);
 
   useEffect(() => {
     const handleStart = () => {
+      // Fade out current content
       gsap.to(layoutRef.current, {
         autoAlpha: 0,
-        y: -20,
-        duration: 0.4,
+        y: -10,
+        duration: 0.6,
         ease: "power2.inOut",
       });
     };
 
     const handleComplete = () => {
-      gsap.fromTo(
-        layoutRef.current,
-        { autoAlpha: 0, y: 20 },
-        { autoAlpha: 1, y: 0, duration: 0.6, ease: "power2.out" }
-      );
+      // Wait 1 second before bringing new content
+      gsap.delayedCall(.6, () => {
+        gsap.fromTo(
+          layoutRef.current,
+          { autoAlpha: 0, y: 20 },
+          { autoAlpha: 1, y: 0, duration: 0.9, ease: "power3.out" }
+        );
+      });
     };
 
     router.events.on("routeChangeStart", handleStart);
@@ -43,7 +47,13 @@ const Layout = ({ children }) => {
   }, [router]);
 
   return (
-    <div ref={layoutRef} style={{ opacity: 0 }}>
+    <div
+      ref={layoutRef}
+      style={{
+        opacity: 0,
+        willChange: "opacity, transform",
+      }}
+    >
       {children}
     </div>
   );
