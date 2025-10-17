@@ -6,7 +6,6 @@
 
 #contact_section_container {
   width: 100%;
-  height: 80vh;
   border-radius: 20px;
   background-color: #fff;
   padding: 2.5rem 2rem;
@@ -14,6 +13,7 @@
   align-items: stretch;
   gap: 2rem;
 }
+
 
 #contact_section_container form {
   width: 45%;
@@ -86,13 +86,14 @@
 
 #contact_map {
   width: 65%;
-  height: 100%;
   border-radius: 15px;
   overflow: hidden;
+  display: flex;
 }
 
 #contact_map iframe {
   width: 100%;
   height: 100%;
   display: block;
+  flex-grow: 1;
 }
