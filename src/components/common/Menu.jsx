@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Menu = () => {
-  const pathname = usePathname(); // ✅ get current route
+  const pathname = usePathname(); 
 
   const menuItems = [
     { name: "Home", path: "/" },
