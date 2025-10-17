@@ -1,24 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import { BiSearch } from "react-icons/bi";
+import Menu from "./Menu";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="logo-container">
-        <Image src="/kesar-logo.png" alt="Logo" width={1000} height={1000} />
+       <Link href="/"><Image src="/kesar-logo.png" alt="Logo" width={1000} height={1000} /></Link>
         <p>
           Phthalocyanine <br /> Pigments
         </p>
       </div>
-      <div className="menu-container">
-        <p>Menu</p>
-        <div id="menu-icon">
-          <span className="m-line"></span>
-          <span className="m-line"></span>
-          <span className="m-line"></span>
-        </div>
-      </div>
+     <Menu/>
       <div className="input-container">
         <BiSearch />
         <input type="text" placeholder="Search Products here" />
