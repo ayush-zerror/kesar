@@ -3,16 +3,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Menu = () => {
-  const pathname = usePathname() || "/"; // fallback to "/" if null
+  const pathname = usePathname() || "/";
 
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Our Products", path: "/products" },
     { name: "Applications & Industries", path: "/about" },
     { name: "Sustainability", path: "/sustainability" },
-    { name: "News", path: "/news" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Investors", path: "/investors" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -29,9 +27,12 @@ const Menu = () => {
       <div className="menu-container-dropdown">
         <ul>
           {menuItems.map((item, index) => {
+            // Highlight menu if pathname starts with the item's path
             const isActive =
-              pathname === item.path ||
-              (item.path !== "/" && pathname?.startsWith(item.path));
+              item.path === "/"
+                ? pathname === "/"
+                : pathname.startsWith(item.path);
+
             return (
               <li key={index} className={isActive ? "active" : ""}>
                 <Link href={item.path}>
