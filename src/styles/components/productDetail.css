@@ -51,10 +51,6 @@
   width: 160px;
   height: 160px;
   border-radius: 15px;
-  background-color: #18193c;
-}
-.product_sample:last-child {
-  background-color: #4464ba;
 }
 .product_title_box {
   margin: 1rem 0 1.5rem;

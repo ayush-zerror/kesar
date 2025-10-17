@@ -3,9 +3,9 @@ import React from "react";
 import Button from "../common/Button";
 import Link from "next/link";
 
-const ProductCard = () => {
+const ProductCard = ({ product }) => {
   return (
-    <Link href={"/products/1"} className="product_list_card">
+    <Link href={`/products/${product.slug}`} className="product_list_card">
       <div className="product_img_wrap">
         <Image
           width={1000}
@@ -16,10 +16,11 @@ const ProductCard = () => {
       </div>
       <div className="product_list_dets">
         <div>
-          <h5 className="product_list_card_name">KPL Blue 7000 D</h5>
+          <h5 className="product_list_card_name">{product.name}</h5>
           <div className="product_card_desc">
-            <span>PB 15.0</span>
-            <span>Ink</span>
+            {product.tags.map((tag, idx) => (
+              <span key={idx}>{tag}</span>
+            ))}
           </div>
         </div>
         <Button title={"More"} color={"orange"} width={"fit"} />

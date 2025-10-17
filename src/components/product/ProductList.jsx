@@ -1,17 +1,20 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 
-const ProductList = () => {
+const ProductList = ({ categories }) => {
   return (
-    <div className="product_list">
-      <h5>ink</h5>
-      <div className="product_list_container">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </div>
-    </div>
+    <>
+      {categories.map((categoryItem, index) => (
+        <div className="product_list" key={index}>
+          <h5>{categoryItem.category}</h5>
+          <div className="product_list_container">
+            {categoryItem.products.map((product, idx) => (
+              <ProductCard key={idx} product={product} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 
