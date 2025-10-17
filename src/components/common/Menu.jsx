@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Menu = () => {
   const pathname = usePathname() || "/";
+  const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -14,11 +15,15 @@ const Menu = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="menu-container">
+    <div className={`menu-container ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
       <p>Menu</p>
 
-      <div id="menu-icon">
+      <div id="menu-icon" >
         <span className="m-line"></span>
         <span className="m-line"></span>
         <span className="m-line"></span>
@@ -27,7 +32,6 @@ const Menu = () => {
       <div className="menu-container-dropdown">
         <ul>
           {menuItems.map((item, index) => {
-            // Highlight menu if pathname starts with the item's path
             const isActive =
               item.path === "/"
                 ? pathname === "/"
