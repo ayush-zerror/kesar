@@ -5,48 +5,31 @@ import { useRouter } from "next/router";
 const Layout = ({ children }) => {
   const layoutRef = useRef(null);
   const router = useRouter();
-  const tl = useRef(gsap.timeline({ paused: true }));
 
-  // Initial mount fade-in
   useEffect(() => {
+    // On page mount (initial fade-in)
     gsap.fromTo(
       layoutRef.current,
-      { opacity: 0, y: 30, filter: "blur(6px)" },
-      {
-        opacity: 1,
-        y: 0,
-        filter: "blur(0px)",
-        duration: 1.2,
-        ease: "power4.out",
-      }
+      { autoAlpha: 0, y: 20 },
+      { autoAlpha: 1, y: 0, duration: 0.6, ease: "power2.out" }
     );
   }, []);
 
-  // Smooth page transitions between routes
   useEffect(() => {
     const handleStart = () => {
-      tl.current = gsap
-        .timeline()
-        .to(layoutRef.current, {
-          opacity: 0,
-          y: -20,
-          filter: "blur(8px)",
-          duration: 0.8,
-          ease: "power4.inOut",
-        });
+      gsap.to(layoutRef.current, {
+        autoAlpha: 0,
+        y: -20,
+        duration: 0.4,
+        ease: "power2.inOut",
+      });
     };
 
     const handleComplete = () => {
       gsap.fromTo(
         layoutRef.current,
-        { opacity: 0, y: 40, filter: "blur(8px)" },
-        {
-          opacity: 1,
-          y: 0,
-          filter: "blur(0px)",
-          duration: 1.2,
-          ease: "expo.out",
-        }
+        { autoAlpha: 0, y: 20 },
+        { autoAlpha: 1, y: 0, duration: 0.6, ease: "power2.out" }
       );
     };
 
@@ -60,14 +43,7 @@ const Layout = ({ children }) => {
   }, [router]);
 
   return (
-    <div
-      ref={layoutRef}
-      style={{
-        opacity: 0,
-        transition: "opacity 0.6s ease",
-        willChange: "transform, opacity, filter",
-      }}
-    >
+    <div ref={layoutRef} style={{ opacity: 0 }}>
       {children}
     </div>
   );
