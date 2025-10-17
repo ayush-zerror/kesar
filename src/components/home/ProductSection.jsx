@@ -13,7 +13,7 @@ const ProductSection = ({title,des,btn}) => {
              {des}
             </p>
           </div>
-          <Button title={btn} />
+          <Button title={btn} link={"/products"} />
         </div>
        <div className="product_slider">
         <ProductCard/>

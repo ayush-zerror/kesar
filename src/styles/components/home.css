@@ -732,14 +732,19 @@
   overflow: hidden;
   border-radius: 20px;
   position: relative;
+  
 }
 .gallery_section_card img {
   width: auto;
   height: 200px;
   display: block;
+  transition: all ease .6s;
+  will-change: scale;
   filter: grayscale(1);
 }
-.gallery_section_card:nth-child(1) img {
+
+.gallery_section_card:hover img{
+  scale: 1.02;
   filter: grayscale(0);
 }
 .gallery_section_card_overlay {
@@ -760,16 +765,19 @@
   border-radius: 50px;
   width: 100%;
   padding: 0.8rem 1rem;
-  background-color: white;
-  color: #000;
+   /* background-color: #ff7006;
+  color: white; */
+    background-color: #fff;
+  color:#000;
   font-size: 0.7rem;
   font-weight: 500;
   line-height: 1;
   font-family: para-medium;
   letter-spacing: 0.8px;
+  transition: all ease .3s;
 }
 
-.gallery_section_card:nth-child(1) .overlay_tab {
-  background-color: #ff7006;
+.gallery_section_card:hover .overlay_tab {
+     background-color: #ff7006;
   color: white;
 }

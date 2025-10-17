@@ -16,7 +16,7 @@ const GallerySection = () => {
               manufacture.
             </p>
           </div>
-          <Button title={"Full Gallery"} />
+          <Button title={"Full Gallery"} link={"/gallery"} />
         </div>
         <div id="gallery_section_cards">
           <div className="gallery_section_card">

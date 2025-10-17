@@ -1,13 +1,24 @@
+"use client";
 import React from "react";
 import { GrNext } from "react-icons/gr";
+import { useRouter } from "next/navigation";
 
-const Button = ({ title, color, width }) => {
+const Button = ({ title, color, width, link, onClick }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else if (link) {
+      router.push(link);
+    }
+  };
+
   return (
     <div
-      className={`button ${color ? `${color}` : ""} ${
-        width ? `${width}` : ""
-      }`}
-   
+      onClick={handleClick}
+      className={`button ${color ? color : ""} ${width ? width : ""}`}
+      style={{ cursor: "pointer" }}
     >
       <h6>{title}</h6>
       <GrNext />
