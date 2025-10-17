@@ -10,13 +10,16 @@ import "@/styles/components/product.css";
 import "@/styles/components/productDetail.css";
 import "@/styles/components/contact.css";
 import "@/styles/components/gallery.css";
+import Layout from "@/components/layout/Layout";
 
 
 export default function App({ Component, pageProps }) {
   return <>
     <SmoothScroller />
     <Navbar />
-    <Component {...pageProps} />
-    <Footer />
+    <Layout>
+      <Component {...pageProps} />
+      <Footer />
+    </Layout>
   </>;
 }

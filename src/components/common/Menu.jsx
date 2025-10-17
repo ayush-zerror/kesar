@@ -10,7 +10,7 @@ const Menu = () => {
     { name: "Home", path: "/" },
     { name: "Our Products", path: "/products" },
     { name: "Applications & Industries", path: "/about" },
-    { name: "Sustainability", path: "/sustainability" },
+    // { name: "Sustainability", path: "/sustainability" },
     { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
   ];
