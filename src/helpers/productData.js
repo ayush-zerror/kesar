@@ -185,7 +185,7 @@ export const categories = [
                 desc: "General redder grade with 10% pigment loading",
                 tags: ["PB 15.3", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
-                shades: ["#3565B9", "#3347AA"]
+                shades: ["#3347AA","#3565B9"]
             },
             {
                 slug: "kpl-blue-7003-or",

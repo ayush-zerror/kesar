@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Button from "../common/Button";
 import Link from "next/link";
@@ -7,12 +6,15 @@ const ProductCard = ({ product }) => {
   return (
     <Link href={`/products/${product.slug}`} className="product_list_card">
       <div className="product_img_wrap">
-        <Image
-          width={1000}
-          height={1000}
-          src="/images/product/product.png"
-          alt="product"
-        />
+        <div className="product_sample_container">
+          {product.shades.map((shade, idx) => (
+              <div
+                key={idx}
+                className={`product_sample${idx + 1}`}
+                style={{ backgroundColor: shade }}
+              ></div>
+            ))}
+        </div>
       </div>
       <div className="product_list_dets">
         <div>
