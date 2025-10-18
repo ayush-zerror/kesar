@@ -35,14 +35,14 @@ const Layout = ({ children }) => {
     };
   }, [router.events]);
 
-  // Detect children change (new route) and fade in
+  // Detect children change (new route) and fade in with small delay
   useEffect(() => {
     if (!isTransitioning.current) return;
 
     // Swap to new children
     setDisplayedChildren(children);
 
-    // Fade in new content
+    // Small delay before fade-in
     gsap.fromTo(
       layoutRef.current,
       { autoAlpha: 0, y: 40 },
@@ -51,6 +51,7 @@ const Layout = ({ children }) => {
         y: 0,
         duration: 0.8,
         ease: "power3.out",
+        delay: 0.2, // <-- small gap between fade-out and fade-in
         onComplete: () => {
           isTransitioning.current = false;
         },
