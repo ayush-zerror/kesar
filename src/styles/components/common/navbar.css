@@ -5,7 +5,6 @@ nav {
   align-items: stretch;
   justify-content: space-between;
   padding: 0.5rem 1.5rem;
-  background-color: var(--background-color);
   gap: 0.5rem;
   line-height: 1;
   position: fixed;
@@ -55,6 +54,8 @@ nav {
   text-transform: uppercase;
   font-family: heading-medium;
   vertical-align: middle;
+  position: relative;
+  z-index: 9;
 }
 #menu-icon {
   display: flex;
@@ -62,6 +63,8 @@ nav {
   justify-content: center;
   align-items: flex-end;
   gap: 0.15rem;
+  position: relative;
+  z-index: 9;
 }
 .open #menu-icon{
   gap: 0.245rem;
@@ -97,11 +100,11 @@ nav {
 .menu-container-dropdown {
   width: 100%;
   position: absolute;
-  top: calc(100% + 0.5rem);
+  top: 0%;
   left: 0;
-  background-color: #f5f5f5f1;
+  padding-top: calc(65px - 1rem);
+  background-color: #fff;
   border-radius: 10px;
-  border: 1px solid #0000001a;
   backdrop-filter: blur(2px);
   box-shadow: 0 4 10 0 rgba(0, 0, 0, 0.08);
   clip-path: inset(0 0 0% 0);
@@ -114,7 +117,7 @@ nav {
 .menu-container-dropdown ul {
   width: 100%;
   list-style: none;
-  padding: 0.2rem 1.5rem;
+  padding: 0 1rem .2rem;
   color: #00000080;
   font-weight: 600;
   font-size: 0.9rem;
