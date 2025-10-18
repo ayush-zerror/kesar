@@ -15,12 +15,13 @@ const Layout = ({ children }) => {
     }
   }, []);
 
-  // Fade-out on route change start
+  // Handle route change start (fade out)
   useEffect(() => {
     const handleRouteChangeStart = () => {
       if (isTransitioning.current) return;
       isTransitioning.current = true;
 
+      // Fade out current page
       gsap.to(layoutRef.current, {
         autoAlpha: 0,
         y: -40,
@@ -35,30 +36,31 @@ const Layout = ({ children }) => {
     };
   }, [router.events]);
 
-  // Fade-in after children update, with small delay
+  // Fade-in new children when children prop changes
   useEffect(() => {
     if (!isTransitioning.current) return;
 
-    // Wait a bit before swapping children
-    const timer = setTimeout(() => {
+    // GSAP timeline for controlled sequence
+    const tl = gsap.timeline({
+      onComplete: () => {
+        isTransitioning.current = false;
+      },
+    });
+
+    // Step 1: Small gap after fade-out
+    tl.to({}, { duration: 0.15 });
+
+    // Step 2: Swap children
+    tl.add(() => {
       setDisplayedChildren(children);
+    });
 
-      gsap.fromTo(
-        layoutRef.current,
-        { autoAlpha: 0, y: 40 },
-        {
-          autoAlpha: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
-          onComplete: () => {
-            isTransitioning.current = false;
-          },
-        }
-      );
-    }, 200); // <-- small gap (fade-out fully visible before fade-in)
-
-    return () => clearTimeout(timer);
+    // Step 3: Fade-in new page
+    tl.fromTo(
+      layoutRef.current,
+      { autoAlpha: 0, y: 40 },
+      { autoAlpha: 1, y: 0, duration: 0.8, ease: "power3.out" }
+    );
   }, [children]);
 
   // Initial page load animation
