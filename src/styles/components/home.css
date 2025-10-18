@@ -688,6 +688,7 @@
 .latest_news_card_img {
   width: 50%;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .latest_news_card_img img {

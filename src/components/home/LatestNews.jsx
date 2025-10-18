@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Button from "../common/Button";
 import Image from "next/image";
 import { AiFillCaretRight } from "react-icons/ai";
 import { GrNext } from "react-icons/gr";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const LatestNews = () => {
+  const imageRef = useRef(null);
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    const image = imageRef.current;
+    const section = sectionRef.current;
+
+    // Zoom-out reveal animation (plays when section hits viewport)
+    const tl = gsap.fromTo(
+      image,
+      { scale: 1.2 },
+      {
+        scale: 1,
+        duration: 1.5, // controls reveal speed
+        ease: "power3.out", // smooth ease-out effect
+        scrollTrigger: {
+          trigger: section,
+          start: "top 90%", // starts when section is 70% from top of viewport
+          toggleActions: "play none none reverse",
+          // play when enters, reverse when scrolling back up
+        },
+      }
+    );
+
+    // Cleanup on unmount
+    return () => {
+      if (tl.scrollTrigger) tl.scrollTrigger.kill();
+      tl.kill();
+    };
+  }, []);
+
   return (
     <div id="latest_news_section">
       <div id="latest_news_section_container">
@@ -27,8 +61,9 @@ const LatestNews = () => {
               Coatings
             </p>
           </div>
-          <Button title={"View more "}  icon={<GrNext />}/>
+          <Button title={"View more "} icon={<GrNext />} />
         </div>
+
         <div className="latest_news_card">
           <div className="latest_news_card_dets">
             <div>
@@ -42,8 +77,11 @@ const LatestNews = () => {
               impact while maintaining superior performance standards.
             </p>
           </div>
-          <div className="latest_news_card_img">
+
+          {/* Zoom-out effect image */}
+          <div className="latest_news_card_img" ref={sectionRef}>
             <Image
+              ref={imageRef}
               width={1000}
               height={1000}
               src="/images/home/news.webp"
