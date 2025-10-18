@@ -51,7 +51,6 @@ const Layout = ({ children }) => {
         y: 0,
         duration: 0.8,
         ease: "power3.out",
-        delay: 0.2, // <-- small gap between fade-out and fade-in
         onComplete: () => {
           isTransitioning.current = false;
         },

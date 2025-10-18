@@ -195,11 +195,28 @@
   letter-spacing: 0.5px;
   color: #000000b3;
   border-radius: 20px;
+  transition: box-shadow ease .6s;
 }
 
 .logo_card img {
   width: auto;
   height: 3rem;
+  transition: scale ease .6s;
+  will-change: scale;
+}
+.logo_card:hover img{
+  scale: 1.15;
+}
+.logo_card:hover{
+  box-shadow: 0 4 10 0 #0000001b;
+}
+.logo_card p{
+  transition: scale ease .6s;
+  will-change: scale;
+  cursor: default;
+}
+.logo_card:hover p{
+  scale: 1.06;
 }
 
 /* integrated_section */
