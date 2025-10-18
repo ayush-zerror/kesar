@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
     }
   }, []);
 
-  // Fade out on route change start
+  // Fade-out on route change start
   useEffect(() => {
     const handleRouteChangeStart = () => {
       if (isTransitioning.current) return;
@@ -30,20 +30,30 @@ const Layout = ({ children }) => {
     };
 
     router.events.on("routeChangeStart", handleRouteChangeStart);
+
     return () => {
       router.events.off("routeChangeStart", handleRouteChangeStart);
     };
   }, [router.events]);
 
-  // Detect children change (new route) and fade in with small delay
+  // Animate new children when they change
   useEffect(() => {
     if (!isTransitioning.current) return;
 
-    // Swap to new children
-    setDisplayedChildren(children);
+    const tl = gsap.timeline({
+      onComplete: () => {
+        isTransitioning.current = false;
+      },
+    });
 
-    // Small delay before fade-in
-    gsap.fromTo(
+    // Step 1: Swap new children
+    tl.add(() => setDisplayedChildren(children));
+
+    // Step 2: Small gap before fade-in
+    tl.to({}, { duration: 0.15 });
+
+    // Step 3: Fade-in new content
+    tl.fromTo(
       layoutRef.current,
       { autoAlpha: 0, y: 40 },
       {
@@ -51,9 +61,6 @@ const Layout = ({ children }) => {
         y: 0,
         duration: 0.8,
         ease: "power3.out",
-        onComplete: () => {
-          isTransitioning.current = false;
-        },
       }
     );
   }, [children]);
