@@ -354,6 +354,7 @@
   padding: 1.5rem;
   border-radius: 20px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .product_details {
@@ -388,6 +389,11 @@
   width: 65%;
   height: auto;
   display: block;
+  transition: scale ease .6s;
+  will-change: scale;
+}
+.product_card:hover img{
+  scale: 1.05;
 }
 
 .product_info {
@@ -565,11 +571,17 @@
   padding: 2.5rem 1.5rem;
   background-color: #fff;
   border-radius: 20px;
+  cursor: pointer;
 }
 .sustainable_section_card img {
   width: auto;
   height: 150px;
   object-fit: contain;
+  will-change: scale;
+  transition: scale ease .6s;
+}
+.sustainable_section_card:hover img{
+  scale: 1.06;
 }
 .sustainable_section_card h5 {
   font-family: para-bold;

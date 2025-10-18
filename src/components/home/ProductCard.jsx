@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from '../common/Button'
+import { GrNext } from 'react-icons/gr'
 
 const ProductCard = () => {
   return (
@@ -20,7 +21,7 @@ const ProductCard = () => {
           />
           <div className="product_info">
             <p>Crude & Activated intermediates for downstream processing</p>
-            <Button title={"More"} color={"orange"} width={"fit"} />
+            <Button title={"More"} color={"orange"} width={"fit"} icon={<GrNext />} />
           </div>
         </div>
   )
