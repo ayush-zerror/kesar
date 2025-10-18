@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const isTransitioning = useRef(false);
 
-  // Prevent Next.js auto scroll
+  // Prevent auto scroll
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -30,39 +30,35 @@ const Layout = ({ children }) => {
     };
 
     router.events.on("routeChangeStart", handleRouteChangeStart);
-
     return () => {
       router.events.off("routeChangeStart", handleRouteChangeStart);
     };
   }, [router.events]);
 
-  // Animate new children when they change
+  // Fade-in after children update, with small delay
   useEffect(() => {
     if (!isTransitioning.current) return;
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        isTransitioning.current = false;
-      },
-    });
+    // Wait a bit before swapping children
+    const timer = setTimeout(() => {
+      setDisplayedChildren(children);
 
-    // Step 1: Swap new children
-    tl.add(() => setDisplayedChildren(children));
+      gsap.fromTo(
+        layoutRef.current,
+        { autoAlpha: 0, y: 40 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          onComplete: () => {
+            isTransitioning.current = false;
+          },
+        }
+      );
+    }, 200); // <-- small gap (fade-out fully visible before fade-in)
 
-    // Step 2: Small gap before fade-in
-    tl.to({}, { duration: 0.15 });
-
-    // Step 3: Fade-in new content
-    tl.fromTo(
-      layoutRef.current,
-      { autoAlpha: 0, y: 40 },
-      {
-        autoAlpha: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power3.out",
-      }
-    );
+    return () => clearTimeout(timer);
   }, [children]);
 
   // Initial page load animation
