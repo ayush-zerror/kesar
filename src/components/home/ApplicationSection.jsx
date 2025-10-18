@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import ApplicationCard from "./ApplicationCard";
+import { GrNext } from "react-icons/gr";
 
 const ApplicationSection = () => {
   const applications = [
@@ -48,7 +49,7 @@ const ApplicationSection = () => {
               proven performance
             </p>
           </div>
-          <Button title={"Explore more Products"} />
+          <Button title={"Explore more Products"} icon={<GrNext />} />
         </div>
         <div id="application_section_cards">
           {applications.map((data, index) => (

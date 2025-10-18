@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import Link from "next/link";
+import { GrNext } from "react-icons/gr";
 
 const ProductCard = ({ product, currentSlug }) => {
   if (!product) return null; // render nothing if product is undefined
@@ -29,7 +30,7 @@ const ProductCard = ({ product, currentSlug }) => {
             ))}
           </div>
         </div>
-        <Button title={"More"} color={"orange"} width="fit" />
+        <Button title={"More"} color={"orange"} width="fit" icon={<GrNext />} />
       </div>
     </div>
   );

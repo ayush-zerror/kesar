@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../common/Button";
 import Image from "next/image";
 import { AiFillCaretRight } from "react-icons/ai";
+import { GrNext } from "react-icons/gr";
 
 const LatestNews = () => {
   return (
@@ -26,7 +27,7 @@ const LatestNews = () => {
               Coatings
             </p>
           </div>
-          <Button title={"View more "} />
+          <Button title={"View more "}  icon={<GrNext />}/>
         </div>
         <div className="latest_news_card">
           <div className="latest_news_card_dets">

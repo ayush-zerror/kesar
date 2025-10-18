@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import ProductCard from "./ProductCard";
+import { GrNext } from "react-icons/gr";
 
 const ProductSection = ({title,des,btn}) => {
   return (
@@ -13,7 +14,7 @@ const ProductSection = ({title,des,btn}) => {
              {des}
             </p>
           </div>
-          <Button title={btn} link={"/products"} />
+          <Button title={btn} link={"/products"} icon={<GrNext />} />
         </div>
        <div className="product_slider">
         <ProductCard/>

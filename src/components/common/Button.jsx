@@ -1,9 +1,7 @@
-"use client";
 import React from "react";
-import { GrNext } from "react-icons/gr";
 import { useRouter } from "next/navigation";
 
-const Button = ({ title, color, width, link, onClick }) => {
+const Button = ({ title, color, width, link, onClick ,icon }) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -19,8 +17,16 @@ const Button = ({ title, color, width, link, onClick }) => {
       onClick={handleClick}
       className={`button ${color ? color : ""} ${width ? width : ""}`}
     >
-      <h6>{title}</h6>
-      <GrNext />
+      <div className="btn-text">
+        <div className="btn-text-wrap">
+          <h6>{title}</h6>
+         {icon && icon } 
+        </div>
+         <div className="btn-text-wrap">
+          <h6>{title}</h6>
+          {icon && icon}
+        </div>
+      </div>
     </div>
   );
 };

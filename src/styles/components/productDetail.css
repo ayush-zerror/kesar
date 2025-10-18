@@ -108,26 +108,3 @@
   align-items: center;
   gap: 1rem;
 }
-
-.product_btns button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.8rem;
-  width: 220px;
-  border-radius: 10px;
-  outline: none;
-  border: 2px solid #004dff;
-  color: #004dff;
-  background-color: transparent;
-  font-family: para-bold;
-  font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
-
-.product_btns button:nth-child(1){
-     color: #fff;
-  background-color: #004dff;
-}

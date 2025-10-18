@@ -3,6 +3,7 @@ import React from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
+import Button from "../common/Button";
 
 const ProductInformation = ({ product, previousSlug, nextSlug }) => {
   return (
@@ -62,18 +63,13 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
 
             {/* Buttons */}
             <div className="product_btns">
-              <button>
-                <span>Request Quotation</span>
-                <MdArrowOutward />
-              </button>
-              <button>
-                <span>MSDS Download</span>
-                <MdOutlineFileDownload />
-              </button>
-              <button>
-                <span>TDS Download</span>
-                <MdOutlineFileDownload />
-              </button>
+              <Button title={"Request Quotation"} color={"blue"} width={"size"} icon={<MdArrowOutward />} />
+              <Button
+                title={"MSDS Download"}
+                color={"blue-border"}
+                width={"size"} icon={<MdOutlineFileDownload />}
+              />
+              <Button title={"TDS Download"} color={"blue-border"} width={"size"} icon={<MdOutlineFileDownload />} />
             </div>
           </div>
         </div>

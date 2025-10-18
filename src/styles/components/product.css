@@ -112,6 +112,7 @@
 }
 .product_list_card.active .button{
   cursor: not-allowed;
+  pointer-events: none;
 }
 .product_link{
   text-decoration: none;

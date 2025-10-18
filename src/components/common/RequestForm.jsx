@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import gsap from "gsap";
+import Button from "./Button";
 
 const RequestForm = ({ open, setOpen }) => {
   const containerRef = useRef(null);
@@ -8,7 +9,11 @@ const RequestForm = ({ open, setOpen }) => {
 
   useEffect(() => {
     if (open) {
-      gsap.to(overlayRef.current, { duration: 0.4, autoAlpha: 1, display: "flex" });
+      gsap.to(overlayRef.current, {
+        duration: 0.4,
+        autoAlpha: 1,
+        display: "flex",
+      });
       gsap.fromTo(
         containerRef.current,
         { y: 80, opacity: 0 },
@@ -64,9 +69,7 @@ const RequestForm = ({ open, setOpen }) => {
           <label htmlFor="product">Select Product</label>
           <textarea id="product" placeholder="Your Message" rows="4"></textarea>
 
-          <button type="submit">
-            Submit <MdArrowOutward />
-          </button>
+          <Button title={"Submit"} color={"blue"} icon={<MdArrowOutward />} width={"full"}/>
         </form>
       </div>
     </div>

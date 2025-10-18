@@ -16,7 +16,7 @@ nav {
 .logo-container {
   width: 25%;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,7 @@ nav {
 .menu-container {
   width: 25%;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,7 +166,7 @@ nav {
 .input-container {
   width: 36%;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 0 1rem;
   display: flex;
   align-items: center;
@@ -190,23 +190,6 @@ nav {
   text-transform: uppercase;
   font-family: heading-regular;
   background-color: transparent;
-}
-.request-btn {
-  width: 14%;
-  background-color: #004dff;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.request-btn p {
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  font-family: heading-medium;
 }
 
 
@@ -277,7 +260,7 @@ nav {
 
 #request_form_container input:focus,
 #request_form_container textarea:focus {
-  border-color: #0066ff;
+  border-color: #004dff;
 }
 
 

@@ -4,7 +4,7 @@ import React from "react";
 import { PiEnvelopeFill, PiPhoneFill, PiTwitterLogoFill } from "react-icons/pi";
 import { RiFacebookFill, RiInstagramFill } from "react-icons/ri";
 import { BsLinkedin } from "react-icons/bs";
-import { GrNext } from "react-icons/gr";
+import { GrFormNext, GrNext } from "react-icons/gr";
 import Button from "./Button";
 
 const Footer = () => {
@@ -97,7 +97,7 @@ const Footer = () => {
           </p>
           <div className="newsletter">
             <input type="text" placeholder="Enter your email id" />
-            <Button title={"Subscribe"} />
+            <Button title={"Subscribe"} icon={<GrFormNext />}/>
           </div>
         </div>
       </div>

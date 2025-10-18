@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../common/Button";
+import { GrNext } from "react-icons/gr";
 
 const Integrated = () => {
   return (
@@ -14,7 +15,7 @@ const Integrated = () => {
             MAP / Zinc Sulphate - closing the loop for repeatable shade, stable
             pricing, and lower waste.
           </p>
-          <Button title={"Learn More About our Integration "}/>
+          <Button title={"Learn More About our Integration "} icon={<GrNext />}/>
         </div>
         <div id="integrated_process">
             <div className="process">

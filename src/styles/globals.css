@@ -47,7 +47,7 @@ body {
   min-width: 180px;
   height: fit-content;
   width: fit-content;
-  padding: 1rem ;
+  padding: 1rem;
   background-color: white;
   border-radius: 10px;
   color: #000;
@@ -55,29 +55,96 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
   cursor: pointer;
   border: 1px solid #00000033;
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1),
+    background-color 0.6s cubic-bezier(0.76, 0, 0.24, 1),
+    border-color 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
-
-.button.orange{
-  color: #FF7006;
-  border: 1px solid #FF7006;
-
+/* .button:hover{
+  background-color: #004dff;
+  color: white;
+  border-color: #004dff;
 }
-.button.fit{
-  min-width: fit-content !important;
+.button.fit:hover{
+  background-color: #ff7006;
+  color: white;
+  border-color: #ff7006;
+} */
+.btn-text {
+  position: relative;
 }
-
+.btn-text-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.button:hover .btn-text-wrap:nth-child(1) {
+  transform: translateY(-150%) scale(0.8);
+  opacity: 0;
+  filter: blur(5px);
+}
+.btn-text-wrap:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: auto;
+  transform: translateY(150%) scale(1.2);
+  opacity: 0;
+  filter: blur(5px);
+}
+.button:hover .btn-text-wrap:nth-child(2) {
+  transform: translateY(0%) scale(1);
+  opacity: 1;
+  filter: blur(0px);
+}
 .button h6 {
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
   line-height: 1;
   margin-top: 0.6px;
-  font-family: para-regular;
-  letter-spacing: .8px;
+  font-family: para-regular !important;
+  letter-spacing: 0.8px !important;
 }
 
 .button svg {
   font-size: 0.75rem;
+}
+
+.button.orange {
+  color: #ff7006;
+  border: 1px solid #ff7006;
+}
+.button.fit {
+  min-width: fit-content !important;
+}
+
+.button.full {
+  min-width: 100% !important;
+  width: 100%;
+  height: auto;
+}
+.button.full .btn-text {
+  width: 100%;
+}
+.button.full .btn-text-wrap {
+  justify-content: space-between !important;
+  width: 100%;
+}
+.button.blue {
+  min-width: 14% !important;
+  height: auto;
+  border: none;
+  background-color: #004dff;
+  color: #fff;
+}
+
+.button.blue-border {
+  border: 2px solid #004dff;
+  color: #004dff;
+  background-color: transparent;
+}
+
+.button.size {
+  width: 220px;
 }
