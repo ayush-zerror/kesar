@@ -6,39 +6,59 @@ const Layout = ({ children }) => {
   const layoutRef = useRef(null);
   const [displayedChildren, setDisplayedChildren] = useState(children);
   const router = useRouter();
+  const isTransitioning = useRef(false);
 
-  // When route changes, this ensures new children are detected
+  // Prevent Next.js auto scroll
   useEffect(() => {
-    if (children === displayedChildren) return;
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        // After fade out, swap content
-        setDisplayedChildren(children);
+  // Fade out on route change start
+  useEffect(() => {
+    const handleRouteChangeStart = () => {
+      if (isTransitioning.current) return;
+      isTransitioning.current = true;
 
-        // Fade in new content
-        gsap.fromTo(
-          layoutRef.current,
-          { autoAlpha: 0, y: 40 },
-          { autoAlpha: 1, y: 0, duration: 0.8, ease: "power3.out" }
-        );
-      },
-    });
+      gsap.to(layoutRef.current, {
+        autoAlpha: 0,
+        y: -40,
+        duration: 0.6,
+        ease: "power2.inOut",
+      });
+    };
 
-    // Fade out old content
-    tl.to(layoutRef.current, {
-      autoAlpha: 0,
-      y: -40,
-      duration: 0.6,
-      ease: "power2.inOut",
-    });
+    router.events.on("routeChangeStart", handleRouteChangeStart);
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChangeStart);
+    };
+  }, [router.events]);
 
-    // Wait a bit before swapping children
-    tl.to({}, { duration: 0.2 });
+  // Detect children change (new route) and fade in
+  useEffect(() => {
+    if (!isTransitioning.current) return;
 
-  }, [children, displayedChildren]);
+    // Swap to new children
+    setDisplayedChildren(children);
 
-  // Initial entry animation on mount
+    // Fade in new content
+    gsap.fromTo(
+      layoutRef.current,
+      { autoAlpha: 0, y: 40 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        onComplete: () => {
+          isTransitioning.current = false;
+        },
+      }
+    );
+  }, [children]);
+
+  // Initial page load animation
   useEffect(() => {
     gsap.fromTo(
       layoutRef.current,
