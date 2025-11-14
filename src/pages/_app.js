@@ -10,6 +10,7 @@ import "@/styles/components/product.css";
 import "@/styles/components/productDetail.css";
 import "@/styles/components/contact.css";
 import "@/styles/components/gallery.css";
+import "@/styles/components/investor.css";
 import Layout from "@/components/layout/Layout";
 
 
