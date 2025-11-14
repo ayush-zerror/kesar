@@ -32,7 +32,7 @@ const ProductInformation = ({ product, previousSlug, nextSlug }) => {
             {product?.shades?.map((shade, idx) => (
               <div
                 key={idx}
-                className="product_sample"
+                className={`product_sample ${product.style ? "center" : ""}`}
                 style={{ backgroundColor: shade }}
               ></div>
             ))}

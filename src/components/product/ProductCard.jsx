@@ -15,7 +15,7 @@ const ProductCard = ({ product, currentSlug }) => {
           {product.shades?.map((shade, idx) => (
             <div
               key={idx}
-              className={`product_sample${idx + 1}`}
+              className={`product_sample${idx + 1} ${product.style ? "center" : ""}`}
               style={{ backgroundColor: shade }}
             ></div>
           ))}

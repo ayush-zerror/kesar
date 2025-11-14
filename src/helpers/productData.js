@@ -105,7 +105,6 @@ export const categories = [
             },
         ]
     },
-    // Plastic category
     {
         category: "Plastic",
         products: [
@@ -167,7 +166,6 @@ export const categories = [
             },
         ]
     },
-    // Offset category
     {
         category: "Offset",
         products: [
@@ -218,6 +216,70 @@ export const categories = [
                 tags: ["PG 7", "Offset"],
                 application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
                 shades: ["#00A02C", "#5BDE69"]
+            },
+        ]
+    },
+     {
+        category: "Anti Corrosives",
+        products: [
+            {
+                slug: "zinc-phosphate",
+                name: "Zinc Phosphate",
+                desc: "General redder grade with 10% pigment loading",
+                tags: ["Zn₃(PO₄)₂", "Anti Corrosives"],
+                application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
+                shades: ["#FFFFFF"],
+                style:"center"
+            },
+             {
+                slug: "zinc-oxide",
+                name: "Zinc Oxide",
+                desc: "General redder grade with 10% pigment loading",
+                tags: ["ZnO", "Anti Corrosives"],
+                application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
+                shades: ["#FFFFFF"],
+                style:"center"
+            },
+             {
+                slug: "zinc-carbonate",
+                name: "Zinc Carbonate",
+                desc: "General redder grade with 10% pigment loading",
+                tags: ["ZnCO₃", "Anti Corrosives"],
+                application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
+                shades: ["#FFFFFF"],
+                style:"center"
+            },
+        ]
+    },
+     {
+        category: "Fertilizers",
+        products: [
+            {
+                slug: "diammonium-phosphate",
+                name: "Diammonium Phosphate",
+                desc: "General redder grade with 10% pigment loading",
+                tags: ["(NH₄)₂HPO₄ ", "Fertilizers"],
+                application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
+                shades: ["#FFFFFF"],
+                style:"center"
+            },
+             {
+                slug: "mono-ammonium-phosphate",
+                name: "Mono Ammonium Phosphate",
+                desc: "General redder grade with 10% pigment loading",
+                tags: ["NH₄H₂PO₄", "Fertilizers"],
+                application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
+                shades: ["#FFFFFF"],
+                style:"center"
+            },
+             {
+                slug: "zinc-sulphate",
+                name: "Zinc Sulphate",
+                desc: "General redder grade with 10% pigment loading",
+                tags: ["ZnSO₄", "Fertilizers"],
+                application: ["NC - PU", "NC Alcohol", "PA", "Vinyl - EVA"],
+                shades: ["#FFFFFF"],
+                style:"center"
             },
         ]
     }

@@ -55,6 +55,9 @@
   height: 160px;
   border-radius: 15px;
 }
+.product_sample.center{
+  box-shadow: 0 0 20px 0 #00000031;
+}
 .product_title_box {
   margin: 1rem 0 1.5rem;
 }
