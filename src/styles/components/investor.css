@@ -171,12 +171,15 @@
 .report_row:hover a{
     color: #004dff;
 }
+.report_row p{
+  line-height: 1.5;
+}
 .report_row strong{
      letter-spacing: 0.5px;
   color: rgb(0, 0, 0);
   font-family: para-bold;
   font-size: 1.1rem;
   font-weight: 900;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   display: inline-block;
 }
