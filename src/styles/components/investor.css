@@ -248,7 +248,7 @@
 }
 
 /* Bigger phones + small tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
  #investor_hero {
     padding: calc(65px + 4rem) 1.5rem 0.5rem;
     overflow: hidden;
@@ -287,9 +287,8 @@
 }
 
 /* Tablets + small laptops */
-@media (min-width: 769px) and (max-width: 1285px) {
+@media (min-width: 768px) and (max-width: 900px) {
 }
-
-/* Large screens */
-@media (min-width: 1286px) {
+/* Tablets + small laptops */
+@media (min-width: 900px) and (max-width: 1285px) {
 }
