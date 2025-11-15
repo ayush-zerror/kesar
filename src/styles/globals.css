@@ -61,12 +61,12 @@ body {
     background-color 0.6s cubic-bezier(0.76, 0, 0.24, 1),
     border-color 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
-.button:hover{
+.button:hover {
   background-color: #004dff;
   color: white;
   border-color: #004dff;
 }
-.button.fit:hover{
+.button.fit:hover {
   background-color: #ff7006;
   color: white;
   border-color: #ff7006;
@@ -149,15 +149,36 @@ body {
   width: 220px;
 }
 
-
 /* Mobile */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .product_link .button {
+    padding: 0.7rem;
+  }
+  .product_link .button h6 {
+    font-size: 0.5rem !important;
+  }
+  .product_link .button svg {
+    font-size: 0.55rem;
+  }
+}
 
 /* Bigger phones + small tablets */
-@media (min-width: 481px) and (max-width: 768px) {}
+@media (min-width: 481px) and (max-width: 768px) {
+  .product_link .button {
+    padding: 0.8rem;
+  }
+  .product_link .button h6 {
+    font-size: 0.6rem !important;
+  }
+  .product_link .button svg {
+    font-size: 0.64rem;
+  }
+}
 
 /* Tablets + small laptops */
-@media (min-width: 769px) and (max-width: 1285px) {}
+@media (min-width: 769px) and (max-width: 1285px) {
+}
 
 /* Large screens */
-@media (min-width: 1286px) {}
+@media (min-width: 1286px) {
+}

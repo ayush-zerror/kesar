@@ -417,6 +417,27 @@ nav {
 
 /* Bigger phones + small tablets */
 @media (min-width: 481px) and (max-width: 768px) {
+  #menu_text {
+    display: none;
+  }
+  #mobile_logo {
+    display: block;
+  }
+  nav {
+    padding: 0.5rem 1.5rem;
+  }
+  .logo-container,
+  .input-container {
+    display: none;
+  }
+  nav .button {
+    display: none;
+  }
+  .menu-container {
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 /* Tablets + small laptops */

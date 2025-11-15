@@ -9,18 +9,18 @@ const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    if (window.innerWidth <= 480) return;
+    if (window.innerWidth <= 768) return;
     setIsOpen(!isOpen);
   };
 
   const toggleMenuMobile = () => {
-    if (window.innerWidth >= 480) return;
+    if (window.innerWidth >= 768) return;
     setIsOpen(!isOpen);
   };
 
   // ✅ Close menu when clicking a link on mobile
   const handleLinkClick = () => {
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 768) {
       setIsOpen(false);
     }
   };
