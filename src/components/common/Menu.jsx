@@ -2,20 +2,48 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MenuData } from "@/helpers/MenuData";
+import Image from "next/image";
 
 const Menu = () => {
   const pathname = usePathname() || "/";
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
+    if (window.innerWidth <= 480) return;
     setIsOpen(!isOpen);
   };
 
-  return (
-    <div className={`menu-container ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-      <p>Menu</p>
+  const toggleMenuMobile = () => {
+    if (window.innerWidth >= 480) return;
+    setIsOpen(!isOpen);
+  };
 
-      <div id="menu-icon" >
+  // ✅ Close menu when clicking a link on mobile
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 480) {
+      setIsOpen(false);
+    }
+  };
+
+  return (
+    <div
+      className={`menu-container ${isOpen ? "open" : ""}`}
+      onClick={toggleMenu}
+    >
+      <p id="menu_text">Menu</p>
+
+      <Link href="/">
+        <Image
+          id="mobile_logo"
+          src="/kesar-logo.webp"
+          alt="Kesar"
+          priority
+          width={1000}
+          height={1000}
+        />
+      </Link>
+
+      <div id="menu-icon" onClick={toggleMenuMobile}>
         <span className="m-line"></span>
         <span className="m-line"></span>
         <span className="m-line"></span>
@@ -30,7 +58,11 @@ const Menu = () => {
                 : pathname.startsWith(item.path);
 
             return (
-              <li key={index} className={isActive ? "active" : ""}>
+              <li
+                key={index}
+                className={isActive ? "active" : ""}
+                onClick={handleLinkClick} // 👈 added
+              >
                 <Link href={item.path}>
                   <span>{item.name}</span>
                 </Link>

@@ -150,12 +150,6 @@ body {
 }
 
 
-main{
-  width: 100%;
-  overflow: hidden;
-}
-
-
 /* Mobile */
 @media (max-width: 480px) {}
 
