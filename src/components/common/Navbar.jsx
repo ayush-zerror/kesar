@@ -4,6 +4,7 @@ import { BiSearch } from "react-icons/bi";
 import Menu from "./Menu";
 import Link from "next/link";
 import RequestBtn from "./RequestBtn";
+import SearchBox from "./SearchBox";
 
 const Navbar = () => {
   return (
@@ -23,12 +24,8 @@ const Navbar = () => {
         </p>
       </div>
       <Menu />
-      <div className="input-container">
-        <BiSearch />
-        <input type="text" placeholder="Search Products here" />
-      </div>
-      <RequestBtn/>
-      
+      <SearchBox />
+      <RequestBtn />
     </nav>
   );
 };
