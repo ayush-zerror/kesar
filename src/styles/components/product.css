@@ -231,7 +231,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .product_list_card_name {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .product_list_dets {
     width: 75%;

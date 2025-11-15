@@ -908,6 +908,7 @@
   #dropdown_container {
     overflow-x: auto;
     gap: 2rem;
+    padding-bottom: 1rem;
   }
 
   /* logo section  */
@@ -1045,6 +1046,7 @@
     margin-top: 1rem;
     overflow: hidden;
     overflow-x: auto;
+    padding-bottom: 1rem;
   }
   .sustainable_section_card p {
     width: 90%;
@@ -1097,6 +1099,7 @@
     overflow: hidden;
     overflow-x: auto;
     margin-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
