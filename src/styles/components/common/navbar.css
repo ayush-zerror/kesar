@@ -206,8 +206,9 @@ nav {
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
-  padding: 1rem;
+  padding: 0 .5rem;
   padding-top: calc(65px - 1rem);
+  padding-bottom: 1rem;
   transition: clip-path 0.7s cubic-bezier(0.87, 0, 0.13, 1);
   position: absolute;
   top: 0%;
@@ -222,6 +223,8 @@ nav {
   overflow-y: auto;
   opacity: 0;
   transition: opacity 0.7s cubic-bezier(0.87, 0, 0.13, 1);
+  padding: .5rem;
+  padding-bottom: 0;
 }
 .input-container.open .search-dropdown-wrapper{
   opacity: 1;
@@ -229,7 +232,7 @@ nav {
 
 /* Scrollbar width */
 .search-dropdown-wrapper::-webkit-scrollbar {
-  width: 3px;
+  width: 2px;
 }
 
 /* Scrollbar track (background) */
@@ -276,7 +279,7 @@ nav {
   font-size: 0.8rem;
   font-weight: 600;
   position: relative;
-  padding: 1.5rem 1rem .5rem;
+  padding: 1rem 1rem .3rem;
   color: rgba(0, 0, 0, 0.2);
 }
 .input-container.open .search-container-dropdown {
@@ -287,6 +290,9 @@ nav {
 }
 .input-container.no-data .search-dropdown-wrapper::-webkit-scrollbar-thumb {
   display: none;
+}
+.input-container.no-data .search-container-dropdown p{
+padding-top: .5rem;
 }
 
 /* request_form */
