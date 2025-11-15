@@ -41,7 +41,7 @@ const SeoHeader = ({ meta }) => {
       />
       <meta property="og:url" content={meta?.canonical ?? canonical} />
       <meta property="og:site_name" content="Kesar Petroproducts Ltd." />
-      <meta property="og:image" content={meta?.og?.image ?? "/kesar-og.jpg"} />
+      <meta property="og:image" content={meta?.og?.image ?? "/kesar-og.png"} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
@@ -61,7 +61,7 @@ const SeoHeader = ({ meta }) => {
       <meta name="twitter:site" content="@KesarPetro" />
       <meta
         name="twitter:image"
-        content={meta?.twitter?.image ?? "/kesar-og.jpg"}
+        content={meta?.twitter?.image ?? "/kesar-og.png"}
       />
       <meta name="twitter:creator" content="@KesarPetro" />
 
