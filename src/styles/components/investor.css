@@ -288,6 +288,41 @@
 
 /* Tablets + small laptops */
 @media (min-width: 768px) and (max-width: 1024px) {
+ #investor_hero {
+    padding: calc(65px + 4rem) 1.5rem 0.5rem;
+    overflow: hidden;
+  }
+  #investor_hero_title h4 {
+    font-size: 2rem;
+  }
+  #investor_filter_wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+  #report_section {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem 0.5rem;
+  }
+  #report_header {
+    gap: 1rem;
+    align-items: flex-start;
+    white-space: nowrap;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #report_filter {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .report_row{
+    line-height: 1.4;
+  }
 }
 /* Tablets + small laptops */
 @media (min-width: 1024px) and (max-width: 1285px) {

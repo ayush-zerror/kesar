@@ -108,7 +108,20 @@
 
 /* Tablets + small laptops */
 @media (min-width: 768px) and (max-width: 1024px) {
+#gallery_main {
+    padding: calc(65px + 4rem) 1.5rem 0.5rem;
+  }
+  #gallery_main h4 {
+    font-size: 2rem;
+  }
+  #gallery_image_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #gallery_image_container .gallery_card h5 {
+    margin-bottom: 0.5rem;
+  }
 }
+
 /* Tablets + small laptops */
 @media (min-width: 1024px) and (max-width: 1285px) {
 }

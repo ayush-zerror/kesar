@@ -166,7 +166,29 @@
 
 /* Tablets + small laptops */
 @media (min-width: 768px) and (max-width: 1024px) {
+   #product_info_section {
+    padding: 65px 1.5rem 0.5rem;
+  }
+  .product_application {
+    flex-wrap: wrap;
+  }
+  .product_btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product_title_box h5 {
+    font-size: 2rem;
+  }
+  .product_sample {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+  }
+  #product_info_section_container {
+    padding: 2rem 1rem 2.5rem;
+  }
 }
+
 /* Tablets + small laptops */
 @media (min-width: 1024px) and (max-width: 1285px) {
 }
