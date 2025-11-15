@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MenuData } from "@/helpers/MenuData";
 
 const Menu = () => {
   const pathname = usePathname() || "/";
   const [isOpen, setIsOpen] = useState(false);
-
-  const menuItems = [
-    { name: "Home", path: "/" },
-    { name: "Our Products", path: "/products" },
-    { name: "Applications & Industries", path: "/about" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "Investors", path: "/investors" },
-    { name: "Contact", path: "/contact" },
-  ];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,7 +23,7 @@ const Menu = () => {
 
       <div className="menu-container-dropdown">
         <ul>
-          {menuItems.map((item, index) => {
+          {MenuData.map((item, index) => {
             const isActive =
               item.path === "/"
                 ? pathname === "/"
