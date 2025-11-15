@@ -6,20 +6,20 @@ export const reportData = {
                 title: "Annual Financial Reports",
                 key: "annualReports",
                 data: [
-                    { year: "FY 2022-23", link: "" },
-                    { year: "FY 2021-22", link: "" },
-                    { year: "FY 2020-21", link: "" },
-                    { year: "FY 2019-20", link: "" },
-                    { year: "FY 2018-19", link: "" },
-                    { year: "FY 2017-18", link: "" },
-                    { year: "FY 2016-17", link: "" },
-                    { year: "FY 2015-16", link: "" },
-                    { year: "FY 2014-15", link: "" },
-                    { year: "FY 2013-14", link: "" },
-                    { year: "FY 2012-13", link: "" },
-                    { year: "FY 2011-12", link: "" },
-                    { year: "FY 2010-11", link: "" },
-                    { year: "FY 2009-10", link: "" },
+                    { year: "FY 2022-23", link: "/pdf/financial-details/annual-reports/Annual_Report_2023.pdf" },
+                    { year: "FY 2021-22", link: "/pdf/financial-details/annual-reports/Annual_Return_for_the_FY_2021_22.pdf" },
+                    { year: "FY 2020-21", link: "/pdf/financial-details/annual-reports/Kesar_AnnualReport_2020-21.pdf" },
+                    { year: "FY 2019-20", link: "/pdf/financial-details/annual-reports/Kesar-Annual-Report-for-FY-19-20.pdf" },
+                    { year: "FY 2018-19", link: "/pdf/financial-details/annual-reports/Kesar_AnnualReport_2018-19.pdf" },
+                    { year: "FY 2017-18", link: "/pdf/financial-details/annual-reports/KesarFY-2017-2018.pdf" },
+                    { year: "FY 2016-17", link: "/pdf/financial-details/annual-reports/Kesar-Pertoproducts-Ltd-AR-2016-17.pdf" },
+                    { year: "FY 2015-16", link: "/pdf/financial-details/annual-reports/KESAR-Annual-2015-2016.pdf" },
+                    { year: "FY 2014-15", link: "/pdf/financial-details/annual-reports/Revised_final_Annual_Report_14.pdf" },
+                    { year: "FY 2013-14", link: "/pdf/financial-details/annual-reports/Revised_final_Annual_Report_14.pdf" },
+                    { year: "FY 2012-13", link: "/pdf/financial-details/annual-reports/KPL Annual Report - 2012-13.pdf" },
+                    { year: "FY 2011-12", link: "/pdf/financial-details/annual-reports/Anual Report 11-12.pdf" },
+                    { year: "FY 2010-11", link: "/pdf/financial-details/annual-reports/kesarAnnual10-11.pdf" },
+                    { year: "FY 2009-10", link: "/pdf/financial-details/annual-reports/kesarAnnual 09 - 10.pdf" },
                 ],
             },
 
@@ -30,128 +30,128 @@ export const reportData = {
                     {
                         title: "Financial Year 2023-24",
                         reports: [
-                            { label: "30 June 2023", link: "" },
-                            { label: "30 Sept 2023", link: "" },
+                            { label: "30 June 2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
+                            { label: "30 Sept 2023", link: "/pdf/financial-details/quarterly-reports/30_September_2023.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2022-23",
                         reports: [
-                            { label: "31 Mar 2023", link: "" },
-                            { label: "30 Sept 2022", link: "" },
-                            { label: "31 Dec 2022", link: "" },
-                            { label: "30 June 2022", link: "" },
+                            { label: "31 Mar 2023", link: "/pdf/financial-details/quarterly-reports/Corporate_Governance_Report_31Mar2023.pdf" },
+                            { label: "30 Sept 2022", link: "/pdf/financial-details/quarterly-reports/Corporate Governace- 30 Sept 2022.pdf" },
+                            { label: "31 Dec 2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" },
+                            { label: "30 June 2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2021-22",
                         reports: [
-                            { label: "30 Jun 2021", link: "" },
-                            { label: "30 Sept 2021", link: "" },
-                            { label: "31 Dec 2021", link: "" },
-                            { label: "31 March 2022", link: "" },
+                            { label: "30 Jun 2021", link: "/pdf/financial-details/quarterly-reports/30_Jun_2021.pdf" },
+                            { label: "30 Sept 2021", link: "/pdf/financial-details/quarterly-reports/30_Sept_2021.pdf" },
+                            { label: "31 Dec 2021", link: "/pdf/financial-details/quarterly-reports/31_Dec_2021.pdf" },
+                            { label: "31 March 2022", link: "/pdf/financial-details/quarterly-reports/31_March_2022.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2020-21",
                         reports: [
-                            { label: "30 Sept 2020", link: "" },
-                            { label: "30 Dec 2020", link: "" },
-                            { label: "31 Mar 2021", link: "" },
-                            { label: "31 Jun 2020", link: "" },
+                            { label: "30 Sept 2020", link: "/pdf/financial-details/quarterly-reports/30_Sept_2020.pdf" },
+                            { label: "30 Dec 2020", link: "/pdf/financial-details/quarterly-reports/30_Dec_2020.pdf" },
+                            { label: "31 Mar 2021", link: "/pdf/financial-details/quarterly-reports/31_Mar_2021.pdf" },
+                            { label: "31 Jun 2020", link: "/pdf/financial-details/quarterly-reports/31_Jun_2020.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2019-20",
                         reports: [
-                            { label: "30 Jun 2019", link: "" },
-                            { label: "30 Sept 2019", link: "" },
-                            { label: "31 Dec 2019", link: "" },
-                            { label: "31 Mar 2020", link: "" },
+                            { label: "30 Jun 2019", link: "/pdf/financial-details/quarterly-reports/30_Jun_2019.pdf" },
+                            { label: "30 Sept 2019", link: "/pdf/financial-details/quarterly-reports/30_sept_2019.pdf" },
+                            { label: "31 Dec 2019", link: "/pdf/financial-details/quarterly-reports/31_Dec_2019.pdf" },
+                            { label: "31 Mar 2020", link: "/pdf/financial-details/quarterly-reports/31_Mar_2020.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2018-19",
                         reports: [
-                            { label: "31 June 2018", link: "" },
-                            { label: "30 Sept 2018", link: "" },
-                            { label: "31 Dec 2018", link: "" },
-                            { label: "31 Mar 2019", link: "" },
+                            { label: "31 June 2018", link: "/pdf/financial-details/quarterly-reports/31_June_2018.pdf" },
+                            { label: "30 Sept 2018", link: "/pdf/financial-details/quarterly-reports/30_Sept_2018.pdf" },
+                            { label: "31 Dec 2018", link: "/pdf/financial-details/quarterly-reports/31_Dec_2018.pdf" },
+                            { label: "31 Mar 2019", link: "/pdf/financial-details/quarterly-reports/31_Mar_2019.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2017-18",
                         reports: [
-                            { label: "30 June 2017", link: "" },
-                            { label: "30 Sept 2017", link: "" },
-                            { label: "31 Dec 2017", link: "" },
-                            { label: "31 March 2018", link: "" },
+                            { label: "30 June 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyreport-30-June-2017.pdf" },
+                            { label: "30 Sept 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-30-sept-2017.pdf" },
+                            { label: "31 Dec 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-31-Dec-2017.pdf" },
+                            { label: "31 March 2018", link: "/pdf/financial-details/quarterly-reports/FY-17-18/Kesar-QFR-March2018.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2016-17",
                         reports: [
-                            { label: "31 March 2017", link: "" },
-                            { label: "30 June 2016", link: "" },
-                            { label: "30 Sept 2016", link: "" },
+                            { label: "31 March 2017", link: "/pdf/corporate-details/share-holding-pattern/31_March_2017.pdf" },
+                            { label: "30 June 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Outcome-Result-kesar-30-June-2016.pdf" },
+                            { label: "30 Sept 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Final-outcome-with-result-30-sept-2016.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2015-16",
                         reports: [
-                            { label: "30 June 2015", link: "" },
-                            { label: "30 Sept 2015", link: "" },
-                            { label: "31 Dec 2015", link: "" },
-                            { label: "31 March 2016", link: "" },
+                            { label: "30 June 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
+                            { label: "30 Sept 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
+                            { label: "31 Dec 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
+                            { label: "31 March 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/UFR-MARCH-2016-KESAR.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2013-14",
                         reports: [
-                            { label: "30 Sept 2013", link: "" },
-                            { label: "31 Dec 2013", link: "" },
-                            { label: "31 March 2014", link: "" },
+                            { label: "30 Sept 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "31 Dec 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "31 March 2014", link: "/pdf/financial-details/quarterly-reports/CLause 35 march 2014.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2012-13",
                         reports: [
-                            { label: "30 June 2012", link: "" },
-                            { label: "30 Sept 2012", link: "" },
-                            { label: "31 Dec 2012", link: "" },
-                            { label: "31 March 2013", link: "" },
+                            { label: "30 June 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "30 Sept 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "31 Dec 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "31 March 2013", link: "/pdf/corporate-details/share-holding-pattern/kesar%20march%2013.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2011-12",
                         reports: [
-                            { label: "30 June 2011", link: "" },
-                            { label: "30 Sept 2011", link: "" },
-                            { label: "31 Dec 2011", link: "" },
-                            { label: "31 March 2012", link: "" },
+                            { label: "30 June 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "30 Sept 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "31 Dec 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "31 March 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2010-11",
                         reports: [
-                            { label: "30 June 2010", link: "" },
-                            { label: "30 Sept 2010", link: "" },
-                            { label: "31 Dec 2010", link: "" },
-                            { label: "31 March 2010", link: "" },
+                            { label: "30 June 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "30 Sept 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "31 Dec 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "31 March 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2009-10",
                         reports: [
-                            { label: "30 June 2009", link: "" },
-                            { label: "30 Sept 2009", link: "" },
-                            { label: "31 Dec 2009", link: "" },
-                            { label: "31 March 2009", link: "" },
+                            { label: "30 June 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "30 Sept 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "31 Dec 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "31 March 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2008-09",
-                        reports: [{ label: "31 Dec 2008", link: "" }],
+                        reports: [{ label: "31 Dec 2008", link: "/pdf/financial-details/quarterly-reports/FY-08-09/FR DEC 08.pdf" }],
                     },
                 ],
             },
@@ -167,125 +167,125 @@ export const reportData = {
                     {
                         title: "Financial Year 2023-24",
                         reports: [
-                            { label: "30th June, 2023", link: "" },
-                            { label: "30th Sep, 2023", link: "" },
+                            { label: "30th June, 2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
+                            { label: "30th Sep, 2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2022-23",
                         reports: [
-                            { label: "31st Mar, 2023", link: "" },
-                            { label: "31st Dec, 2022", link: "" },
-                            { label: "30th June, 2022", link: "" },
-                            { label: "30th Sep, 2022", link: "" },
+                            { label: "31st Mar, 2023", link: "/pdf/financial-details/quarterly-reports/Corporate_Governance_Report_31Mar2023.pdf" },
+                            { label: "31st Dec, 2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" },
+                            { label: "30th June, 2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" },
+                            { label: "30th Sep, 2022", link: "/pdf/financial-details/quarterly-reports/Corporate Governace- 30 Sept 2022.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2021-22",
                         reports: [
-                            { label: "30th June, 2021", link: "" },
-                            { label: "30th Sept, 2021", link: "" },
-                            { label: "31st Dec, 2021", link: "" },
-                            { label: "31st Mar, 2022", link: "" },
+                            { label: "30th June, 2021", link: "/pdf/financial-details/quarterly-reports/30_Jun_2021.pdf" },
+                            { label: "30th Sept, 2021", link: "/pdf/financial-details/quarterly-reports/30_Sept_2021.pdf" },
+                            { label: "31st Dec, 2021", link: "/pdf/financial-details/quarterly-reports/31_Dec_2021.pdf" },
+                            { label: "31st Mar, 2022", link: "/pdf/financial-details/quarterly-reports/31_March_2022.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2020-21",
                         reports: [
-                            { label: "30th June, 2020", link: "" },
-                            { label: "30th Sept, 2020", link: "" },
-                            { label: "31st Dec, 2020", link: "" },
-                            { label: "31st Mar, 2021", link: "" },
+                            { label: "30th June, 2020", link: "/pdf/corporate-details/share-holding-pattern/30_June_2020.pdf" },
+                            { label: "30th Sept, 2020", link: "/pdf/financial-details/quarterly-reports/30_Sept_2020.pdf" },
+                            { label: "31st Dec, 2020", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2020.pdf" },
+                            { label: "31st Mar, 2021", link: "/pdf/financial-details/quarterly-reports/31_Mar_2021.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2019-20",
                         reports: [
-                            { label: "30th June, 2019", link: "" },
-                            { label: "30th Sept, 2019", link: "" },
-                            { label: "31st Dec, 2019", link: "" },
-                            { label: "31st Mar, 2020", link: "" },
+                            { label: "30th June, 2019", link: "/pdf/financial-details/quarterly-reports/30_Jun_2019.pdf" },
+                            { label: "30th Sept, 2019", link: "/pdf/financial-details/quarterly-reports/30_sept_2019.pdf" },
+                            { label: "31st Dec, 2019", link: "/pdf/financial-details/quarterly-reports/31_Dec_2019.pdf" },
+                            { label: "31st Mar, 2020", link: "/pdf/financial-details/quarterly-reports/31_Mar_2020.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2018-19",
                         reports: [
-                            { label: "30th June, 2018", link: "" },
-                            { label: "30th Sept, 2018", link: "" },
-                            { label: "30th Mar, 2019", link: "" },
-                            { label: "31st Dec, 2019", link: "" },
+                            { label: "30th June, 2018", link: "/pdf/corporate-details/share-holding-pattern/30_June_2018.pdf" },
+                            { label: "30th Sept, 2018", link: "/pdf/financial-details/quarterly-reports/30_Sept_2018.pdf" },
+                            { label: "30th Mar, 2019", link: "/pdf/corporate-details/share-holding-pattern/30_Mar_2019.pdf" },
+                            { label: "31st Dec, 2019", link: "/pdf/financial-details/quarterly-reports/31_Dec_2019.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2017-18",
                         reports: [
-                            { label: "30th June, 2017", link: "" },
-                            { label: "30th Sept, 2017", link: "" },
-                            { label: "31st Dec, 2017", link: "" },
-                            { label: "31st March, 2018", link: "" },
+                            { label: "30th June, 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyreport-30-June-2017.pdf" },
+                            { label: "30th Sept, 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-30-sept-2017.pdf" },
+                            { label: "31st Dec, 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-31-Dec-2017.pdf" },
+                            { label: "31st March, 2018", link: "/pdf/corporate-details/share-holding-pattern/31_March_2018.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2016-17",
                         reports: [
-                            { label: "30th June, 2016", link: "" },
-                            { label: "30th Sept, 2016", link: "" },
-                            { label: "31st Dec, 2016", link: "" },
-                            { label: "31st March, 2017", link: "" },
+                            { label: "30th June, 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Outcome-Result-kesar-30-June-2016.pdf" },
+                            { label: "30th Sept, 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Final-outcome-with-result-30-sept-2016.pdf" },
+                            { label: "31st Dec, 2016", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2016.pdf" },
+                            { label: "31st March, 2017", link: "/pdf/corporate-details/share-holding-pattern/31_March_2017.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2015-16",
                         reports: [
-                            { label: "30th June, 2015", link: "" },
-                            { label: "30th Sept, 2015", link: "" },
-                            { label: "31st Dec, 2015", link: "" },
-                            { label: "31st March, 2016", link: "" },
+                            { label: "30th June, 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
+                            { label: "30th Sept, 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
+                            { label: "31st Dec, 2015", link: "/pdf/financial-details/quarterly-reports/FY-14-15/Result-30-06-2015.pdf" },
+                            { label: "31st March, 2016", link: "/pdf/financial-details/quarterly-reports/FY-15-16/Final-outcome-with-result-30-sept-2016.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2013-14",
                         reports: [
-                            { label: "30th June, 2013", link: "" },
-                            { label: "30th Sept, 2013", link: "" },
-                            { label: "31st Dec, 2013", link: "" },
-                            { label: "31st March, 2014", link: "" },
+                            { label: "30th June, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "30th Sept, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "31st Dec, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "31st March, 2014", link: "/pdf/financial-details/quarterly-reports/CLause 35 march 2014.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2012-13",
                         reports: [
-                            { label: "30th June, 2012", link: "" },
-                            { label: "30th Sept, 2012", link: "" },
-                            { label: "31st Dec, 2012", link: "" },
-                            { label: "31st March, 2013", link: "" },
+                            { label: "30th June, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "30th Sept, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "31st Dec, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "31st March, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2011-12",
                         reports: [
-                            { label: "30th June, 2011", link: "" },
-                            { label: "30th Sept, 2011", link: "" },
-                            { label: "31st Dec, 2011", link: "" },
-                            { label: "31st March, 2012", link: "" },
+                            { label: "30th June, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "30th Sept, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "31st Dec, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "31st March, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2010-11",
                         reports: [
-                            { label: "30th June, 2010", link: "" },
-                            { label: "30th Sept, 2010", link: "" },
-                            { label: "31st Dec, 2010", link: "" },
-                            { label: "31st March, 2011", link: "" },
+                            { label: "30th June, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "30th Sept, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "31st Dec, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "31st March, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2009-10",
                         reports: [
-                            { label: "30th June, 2009", link: "" },
-                            { label: "30th Sept, 2009", link: "" },
-                            { label: "31st Dec, 2009", link: "" },
-                            { label: "31st March, 2010", link: "" },
+                            { label: "30th June, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "30th Sept, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "31st Dec, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "31st March, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
                         ],
                     },
                 ],
@@ -299,92 +299,92 @@ export const reportData = {
                     {
                         title: "Financial Year 2023-24",
                         reports: [
-                            { label: "30th June, 2023", link: "" },
-                            { label: "30th Sept, 2023", link: "" },
+                            { label: "30th June, 2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
+                            { label: "30th Sept, 2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2022-23",
                         reports: [
-                            { label: "31st Mar, 2023", link: "" },
-                            { label: "31st Dec, 2022", link: "" },
-                            { label: "30th June, 2022", link: "" },
-                            { label: "30th Sept, 2022", link: "" },
+                            { label: "31st Mar, 2023", link: "/pdf/financial-details/quarterly-reports/Corporate_Governance_Report_31Mar2023.pdf" },
+                            { label: "31st Dec, 2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" },
+                            { label: "30th June, 2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" },
+                            { label: "30th Sept, 2022", link: "/pdf/financial-details/quarterly-reports/Corporate Governace- 30 Sept 2022.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2021-22",
                         reports: [
-                            { label: "30th June, 2021", link: "" },
-                            { label: "30th Sept, 2021", link: "" },
-                            { label: "31st Dec, 2021", link: "" },
-                            { label: "31st March, 2022", link: "" },
+                            { label: "30th June, 2021", link: "/pdf/financial-details/quarterly-reports/30_Jun_2021.pdf" },
+                            { label: "30th Sept, 2021", link: "/pdf/financial-details/quarterly-reports/30_Sept_2021.pdf" },
+                            { label: "31st Dec, 2021", link: "/pdf/financial-details/quarterly-reports/31_Dec_2021.pdf" },
+                            { label: "31st March, 2022", link: "/pdf/financial-details/quarterly-reports/31_March_2022.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2018-19",
                         reports: [
-                            { label: "30th June, 2018", link: "" },
-                            { label: "30th Sept, 2018", link: "" },
+                            { label: "30th June, 2018", link: "/pdf/corporate-details/share-holding-pattern/30_June_2018.pdf" },
+                            { label: "30th Sept, 2018", link: "/pdf/financial-details/quarterly-reports/30_Sept_2018.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2017-18",
                         reports: [
-                            { label: "30th June, 2017", link: "" },
-                            { label: "30th Sept, 2017", link: "" },
+                            { label: "30th June, 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyreport-30-June-2017.pdf" },
+                            { label: "30th Sept, 2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyresults-30-sept-2017.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2016-17",
                         reports: [
-                            { label: "31st Dec, 2016", link: "" },
-                            { label: "31st March, 2017", link: "" },
+                            { label: "31st Dec, 2016", link: "/pdf/corporate-details/share-holding-pattern/31_Dec_2016.pdf" },
+                            { label: "31st March, 2017", link: "/pdf/corporate-details/share-holding-pattern/31_March_2017.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2013-14",
                         reports: [
-                            { label: "30th June, 2013", link: "" },
-                            { label: "30th Sept, 2013", link: "" },
-                            { label: "31st Dec, 2013", link: "" },
-                            { label: "31st March, 2014", link: "" },
+                            { label: "30th June, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "30th Sept, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "31st Dec, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
+                            { label: "31st March, 2014", link: "/pdf/financial-details/quarterly-reports/CLause 35 march 2014.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2012-13",
                         reports: [
-                            { label: "30th June, 2012", link: "" },
-                            { label: "30th Sept, 2012", link: "" },
-                            { label: "31st Dec, 2012", link: "" },
-                            { label: "31st March, 2013", link: "" },
+                            { label: "30th June, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "30th Sept, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "31st Dec, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
+                            { label: "31st March, 2013", link: "/pdf/financial-details/quarterly-reports/UFR%20June%2013.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2011-12",
                         reports: [
-                            { label: "30th June, 2011", link: "" },
-                            { label: "30th Sept, 2011", link: "" },
-                            { label: "31st Dec, 2011", link: "" },
-                            { label: "31st March, 2012", link: "" },
+                            { label: "30th June, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "30th Sept, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "31st Dec, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
+                            { label: "31st March, 2012", link: "/pdf/corporate-details/share-holding-pattern/corporate gover report-31.03.2012.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2010-11",
                         reports: [
-                            { label: "30th June, 2010", link: "" },
-                            { label: "30th Sept, 2010", link: "" },
-                            { label: "31st Dec, 2010", link: "" },
-                            { label: "31st March, 2011", link: "" },
+                            { label: "30th June, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "30th Sept, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "31st Dec, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
+                            { label: "31st March, 2011", link: "/pdf/corporate-details/share-holding-pattern/CG%20June%2011.pdf" },
                         ],
                     },
                     {
                         title: "Financial Year 2009-10",
                         reports: [
-                            { label: "30th June, 2009", link: "" },
-                            { label: "30th Sept, 2009", link: "" },
-                            { label: "31st Dec, 2009", link: "" },
-                            { label: "31st March, 2010", link: "" },
+                            { label: "30th June, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "30th Sept, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "31st Dec, 2009", link: "/pdf/corporate-details/share-holding-pattern/CG%20DEC%2009.pdf" },
+                            { label: "31st March, 2010", link: "/pdf/corporate-details/share-holding-pattern/CG%20Sep%2010.pdf" },
                         ],
                     },
                 ],
@@ -415,32 +415,32 @@ export const reportData = {
                     {
                         title: "Financial Year 2023-24",
                         reports: [
-                            { label: "Scrutinizer Report- AGM 2022-2023", link: "#" }
+                            { label: "Scrutinizer Report- AGM 2022-2023", link: "/pdf/investor-information/scrutizner-report/KPL_ 32nd AGM notice 20.09.2022.pdf" }
                         ]
                     },
                     {
                         title: "Financial Year 2022-23",
                         reports: [
-                            { label: "Scrutinizer Report Postal Ballot", link: "#" }
+                            { label: "Scrutinizer Report Postal Ballot", link: "/pdf/investor-information/scrutizner-report/Scrutinizer_Report_Postal_Ballot.pdf" }
                         ]
                     },
                     {
                         title: "Financial Year 2017-21",
                         reports: [
-                            { label: "2017", link: "#" },
-                            { label: "2018", link: "#" },
-                            { label: "2019", link: "#" },
-                            { label: "2020", link: "#" },
+                            { label: "2017", link: "/pdf/financial-details/quarterly-reports/FY-16-17/Kesar-UFR-financial-details-quarterlyreport-30-June-2017.pdf" },
+                            { label: "2018", link: "/pdf/financial-details/quarterly-reports/30_Sept_2018.pdf" },
+                            { label: "2019", link: "/pdf/financial-details/quarterly-reports/30_Jun_2019.pdf" },
+                            { label: "2020", link: "/pdf/financial-details/quarterly-reports/30_Dec_2020.pdf" },
                             { label: "2020 Voting Results", link: "#" },
-                            { label: "2021", link: "#" },
-                            { label: "2022", link: "#" }
+                            { label: "2021", link: "/pdf/financial-details/quarterly-reports/30_Jun_2021.pdf" },
+                            { label: "2022", link: "/pdf/financial-details/quarterly-reports/30_June_2022.pdf" }
                         ]
                     },
                     {
                         title: "Financial Year 2015-16",
                         reports: [
-                            { label: "AGM", link: "#" },
-                            { label: "EGM", link: "#" }
+                            { label: "AGM", link: "/pdf/investor-information/scrutizner-report/KPL_ 32nd AGM notice 20.09.2022.pdf" },
+                            { label: "EGM", link: "/pdf/corporate-details/share-holding-pattern/EGM_Notice.pdf" }
                         ]
                     }
                 ]
@@ -464,9 +464,9 @@ export const reportData = {
                 data: [
                     {
                         reports: [
-                            { label: "12th August 2023", link: "#" },
+                            { label: "12th August 2023", link: "/pdf/investor-information/newspaper-ads/Newspaper_Ads_12th_August_2023.pdf" },
                             { label: "06th September 2023 - AGM Notice", link: "#" },
-                            { label: "12th November 2023", link: "#" },
+                            { label: "12th November 2023", link: "/pdf/investor-information/newspaper-ads/Newspaper_Ads_12th_November_2023.pdf" },
                             { label: "21st May, 2016", link: "#" },
                             { label: "8th August, 2017", link: "#" },
                             { label: "8th August, 2017", link: "#" }, // duplicate kept as requested
@@ -485,10 +485,10 @@ export const reportData = {
                     {
                         title: "Notice of General Meeting",
                         reports: [
-                            { label: "Notice of 33rd AGM - 26.09.2023", link: "#" },
+                            { label: "Notice of 33rd AGM - 26.09.2023", link: "/pdf/investor-information/scrutizner-report/Notice_of_33rd_AGM_26_09_2023.pdf" },
                             { label: "Intimation of Board Meeting", link: "#" },
-                            { label: "Notice of Postal Ballot to BSE", link: "#" },
-                            { label: "Board Meeting Intimation - 14.11.2022", link: "#" },
+                            { label: "Notice of Postal Ballot to BSE", link: "/pdf/investor-information/scrutizner-report/Notice_of_Postal_Ballot_to_BSE.pdf" },
+                            { label: "Board Meeting Intimation - 14.11.2022", link: "/pdf/investor-information/notices-of-meeting/Board meeting intimation- 14.11.2022.pdf" },
                             { label: "Notice of 32nd AGM - 29.09.2022", link: "#" },
                             { label: "Feb, 2016", link: "#" },
                             { label: "May, 2017", link: "#" },
@@ -555,7 +555,7 @@ D-153 A| Ist Floor | Okhla Industrial Area, Phase - I | New Delhi-110 020.
                     {
                         title: "2018",
                         reports: [
-                            { label: "Kesar Petro Products Investor Presentation", link: "#" }
+                            { label: "Kesar Petro Products Investor Presentation", link: "/pdf/investor-information/investor-information/Kesar-Petroproducts-Investor-Presentation-9MFY18.pdf" }
                         ]
                     }
                 ]
@@ -566,9 +566,9 @@ D-153 A| Ist Floor | Okhla Industrial Area, Phase - I | New Delhi-110 020.
                 data: [
                     {
                         reports: [
-                            { label: "Secretarial Compliance Report Mar 19", link: "#" },
-                            { label: "Secretarial Compliance Report Mar 20", link: "#" },
-                            { label: "Secretarial Compliance Report Mar 21", link: "#" },
+                            { label: "Secretarial Compliance Report Mar 19", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial Compliance Report Mar 19.pdf" },
+                            { label: "Secretarial Compliance Report Mar 20", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial Compliance Report Mar 20.pdf" },
+                            { label: "Secretarial Compliance Report Mar 21", link: "/pdf/investor-information/secretarial-compliance-reports/Secretarial Compliance Report Mar 21.pdf" },
                             { label: "Secretarial Compliance Report Mar 22", link: "#" },
                             { label: "Secretarial Compliance Report Mar 23", link: "#" }
                         ]
@@ -588,23 +588,23 @@ D-153 A| Ist Floor | Okhla Industrial Area, Phase - I | New Delhi-110 020.
                 data: [
                     {
                         reports: [
-                            { label: "Policy on Board Diversity", link: "" },
-                            { label: "Code of Fair Disclosure and Determination of Legitimate Purpose", link: "" },
-                            { label: "Policy on Criteria for Appointment of Directors and KMP", link: "" },
-                            { label: "Risk Management Policy", link: "" },
-                            { label: "Policy on Prevention of Sexual Harassment", link: "" },
-                            { label: "Corporate Social Responsibility Policy", link: "" },
-                            { label: "Code of Conduct for Prevention of Insider Trading", link: "" },
-                            { label: "Corporate Social Responsibility Policy", link: "" },
-                            { label: "Code of Conduct for Directors and Senior Management", link: "" },
-                            { label: "Vigil Mechanism Policy", link: "" },
+                            { label: "Policy on Board Diversity", link: "/pdf/archives/policies/POLICY ON BOARD DIVERSITY.pdf" },
+                            { label: "Code of Fair Disclosure and Determination of Legitimate Purpose", link: "/pdf/archives/policies/Code of Fair Disclosure and determination of Legitimate Purpose.pdf" },
+                            { label: "Policy on Criteria for Appointment of Directors and KMP", link: "/pdf/corporate-details/share-holding-pattern/Policy_on_criteria_for_appointment_of_Directors_and_KMP.pdf" },
+                            { label: "Risk Management Policy", link: "/pdf/corporate-details/share-holding-pattern/Risk_management_policy.pdf" },
+                            { label: "Policy on Prevention of Sexual Harassment", link: "/pdf/archives/policies/POlicy on Prevention of Sexual Harrassment.pdf" },
+                            { label: "Corporate Social Responsibility Policy", link: "/pdf/corporate-details/share-holding-pattern/Corporate_Social_responsibility_policy.pdf" },
+                            { label: "Code of Conduct for Prevention of Insider Trading", link: "/pdf/corporate-details/share-holding-pattern/Code_of_conduct_for_prevention_of_Insider_Trading.pdf" },
+                            { label: "Corporate Social Responsibility Policy", link: "/pdf/corporate-details/share-holding-pattern/Corporate_Social_responsibility_policy.pdf" },
+                            { label: "Code of Conduct for Directors and Senior Management", link: "/pdf/archives/policies/CodeofConductforDirectorsandSeniorManagement.pdf" },
+                            { label: "Vigil Mechanism Policy", link: "/pdf/archives/policies/VigilMachnaisumPolicy.pdf" },
                             { label: "Risk Management Policy (Coming Soon)", link: "" },
-                            { label: "Policy on Dealing with Related Party Transactions", link: "" },
-                            { label: "Policy for Determination of Materiality of Event/Information", link: "" },
-                            { label: "Policy for Preservation of Documents", link: "" },
-                            { label: "Terms of Appointment of Independent Directors", link: "" },
-                            { label: "Familiarisation Programme for Independent Directors", link: "" },
-                            { label: "Archival Policy", link: "" },
+                            { label: "Policy on Dealing with Related Party Transactions", link: "/pdf/archives/policies/PolicyondealingwiththeRelatedPartyTransactions.pdf" },
+                            { label: "Policy for Determination of Materiality of Event/Information", link: "/pdf/archives/policies/Policy-for-Determination-of-Materiality-of-any-Event-Information.pdf" },
+                            { label: "Policy for Preservation of Documents", link: "/pdf/archives/policies/Policy-for-Preservation-of-Documents.pdf" },
+                            { label: "Terms of Appointment of Independent Directors", link: "/pdf/archives/policies/Terms-of-Appointment-of-Independent-Directors.pdf" },
+                            { label: "Familiarisation Programme for Independent Directors", link: "/pdf/archives/policies/Familirisation-of-Independent-Directors-Programme.pdf" },
+                            { label: "Archival Policy", link: "/pdf/archives/policies/Archival-Policy.pdf" },
                         ],
                     },
                 ],
@@ -616,9 +616,9 @@ D-153 A| Ist Floor | Okhla Industrial Area, Phase - I | New Delhi-110 020.
                 data: [
                     {
                         reports: [
-                            { label: "Details for Registration Process and E-Communication Form", link: "" },
-                            { label: "Nomination Form – SH 13", link: "" },
-                            { label: "Reporting Loss of Share Certificate Form", link: "" },
+                            { label: "Details for Registration Process and E-Communication Form", link: "/pdf/archives/forms/Details-for-Registration-process-and-form-for-E-communication.pdf" },
+                            { label: "Nomination Form – SH 13", link: "/pdf/archives/forms/Nomination-Form-SH-13.pdf" },
+                            { label: "Reporting Loss of Share Certificate Form", link: "/pdf/archives/forms/Reporting-Loss-of-Share-Certificate-Form.pdf" },
                         ],
                     },
                 ],
@@ -636,78 +636,78 @@ D-153 A| Ist Floor | Okhla Industrial Area, Phase - I | New Delhi-110 020.
                     {
                         title: "Financial Year 2018-19",
                         reports: [
-                            { label: "Board Meeting outcome 14.02.2019", link: "" },
-                            { label: "Board Meeting outcome 14.08.2018", link: "" },
-                            { label: "Board Meeting outcome 14.11.2018", link: "" },
-                            { label: "Board Meeting outcome 30.05.2018", link: "" },
-                            { label: "Disclosure under Reg 30", link: "" },
+                            { label: "Board Meeting outcome 14.02.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 14_02_2019.pdf" },
+                            { label: "Board Meeting outcome 14.08.2018", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 14_08_2018.pdf" },
+                            { label: "Board Meeting outcome 14.11.2018", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 14_11_2018.pdf" },
+                            { label: "Board Meeting outcome 30.05.2018", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome 30_05_2018.pdf" },
+                            { label: "Disclosure under Reg 30", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30- Change in RTA.pdf" },
                         ],
                     },
 
                     {
                         title: "Financial Year 2019-20",
                         reports: [
-                            { label: "Board meeting outcome- 10.02.2020", link: "" },
-                            { label: "Board meeting outcome- 12.11.2019", link: "" },
-                            { label: "Board meeting outcome- 14.08.2019", link: "" },
-                            { label: "Board meeting outcome- 30.05.2019", link: "" },
+                            { label: "Board meeting outcome- 10.02.2020", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_10_02_2020.pdf" },
+                            { label: "Board meeting outcome- 12.11.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_12_11_2019.pdf" },
+                            { label: "Board meeting outcome- 14.08.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_14_08_2019.pdf" },
+                            { label: "Board meeting outcome- 30.05.2019", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_30_05_2019.pdf" },
                         ],
                     },
 
                     {
                         title: "Financial Year 2020-21",
                         reports: [
-                            { label: "Board Meeting outcome- 11.02.2021", link: "" },
-                            { label: "Board Meeting outcome- 30.06.2021", link: "" },
-                            { label: "Board Meeting outcome- 31.07.2020", link: "" },
-                            { label: "Board Meeting outome- 12.11.2020", link: "" },
+                            { label: "Board Meeting outcome- 11.02.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_02_2021.pdf" },
+                            { label: "Board Meeting outcome- 30.06.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_30_06_2021.pdf" },
+                            { label: "Board Meeting outcome- 31.07.2020", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_31_07_2020.pdf" },
+                            { label: "Board Meeting outome- 12.11.2020", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outome_12_11_2020.pdf" },
                         ],
                     },
 
                     {
                         title: "Financial Year 2021-22",
                         reports: [
-                            { label: "Board Meeting outcome- 11.02.2022", link: "" },
-                            { label: "Board Meeting outcome- 11.03.2022", link: "" },
-                            { label: "Board Meeting outcome- 11.11.2021", link: "" },
-                            { label: "Board meeting outcome- 12.08.2021", link: "" },
-                            { label: "Board meeting outcome- 30.06.2021", link: "" },
+                            { label: "Board Meeting outcome- 11.02.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_02_2022.pdf" },
+                            { label: "Board Meeting outcome- 11.03.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_03_2022.pdf" },
+                            { label: "Board Meeting outcome- 11.11.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_11_11_2021.pdf" },
+                            { label: "Board meeting outcome- 12.08.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_12_08_2021.pdf" },
+                            { label: "Board meeting outcome- 30.06.2021", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_30_06_2021.pdf" },
 
-                            { label: "Disclosure under Reg 30 (1)", link: "" },
-                            { label: "Disclosure under Reg 30 (2)", link: "" },
-                            { label: "Disclosure under Reg 30 (3)", link: "" },
-                            { label: "Disclosure under Reg 30 (4)", link: "" },
-                            { label: "Disclosure under Reg 30 (5)", link: "" },
-                            { label: "Disclosure under Reg 30 (6)", link: "" },
-                            { label: "Disclosure under Reg 30 (7)", link: "" },
+                            { label: "Disclosure under Reg 30 (1)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_1.pdf" },
+                            { label: "Disclosure under Reg 30 (2)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_2.pdf" },
+                            { label: "Disclosure under Reg 30 (3)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_3.pdf" },
+                            { label: "Disclosure under Reg 30 (4)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_4.pdf" },
+                            { label: "Disclosure under Reg 30 (5)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_5.pdf" },
+                            { label: "Disclosure under Reg 30 (6)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_6.pdf" },
+                            { label: "Disclosure under Reg 30 (7)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_7.pdf" },
                         ],
                     },
 
                     {
                         title: "Financial Year 2022-23",
                         reports: [
-                            { label: "Board Meeting outcome - 10.02.2023", link: "" },
-                            { label: "Board Meeting outcome - 21.12.2023", link: "" },
-                            { label: "Board Meeting outcome - 27.12.2023", link: "" },
-                            { label: "Board Meeting outcome - 26.05.2022", link: "" },
-                            { label: "Board meeting outcome- 14.11.2022", link: "" },
-                            { label: "Board meeting outcome-10.08.2022", link: "" },
-                            { label: "Board meeting Outcome-30.08.2022", link: "" },
+                            { label: "Board Meeting outcome - 10.02.2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
+                            { label: "Board Meeting outcome - 21.12.2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
+                            { label: "Board Meeting outcome - 27.12.2023", link: "/pdf/financial-details/quarterly-reports/30_June_2023.pdf" },
+                            { label: "Board Meeting outcome - 26.05.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board Meeting outcome_26_05_2022.pdf" },
+                            { label: "Board meeting outcome- 14.11.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_14_11_2022.pdf" },
+                            { label: "Board meeting outcome-10.08.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting outcome_10_08_2022.pdf" },
+                            { label: "Board meeting Outcome-30.08.2022", link: "/pdf/corporate-announcements/corporate-announcements/Board meeting Outcome_30_08_2022.pdf" },
 
-                            { label: "Disclosure under Reg 30 (1)", link: "" },
-                            { label: "Disclosure under Reg 30 (2)", link: "" },
-                            { label: "Disclosure under Reg 30 (3)", link: "" },
-                            { label: "Disclosure under Reg 30- Change in RTA", link: "" },
-                            { label: "Disclosure under Reg 23(9)", link: "" },
+                            { label: "Disclosure under Reg 30 (1)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_1.pdf" },
+                            { label: "Disclosure under Reg 30 (2)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_2.pdf" },
+                            { label: "Disclosure under Reg 30 (3)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30_3.pdf" },
+                            { label: "Disclosure under Reg 30- Change in RTA", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 30- Change in RTA.pdf" },
+                            { label: "Disclosure under Reg 23(9)", link: "/pdf/corporate-announcements/corporate-announcements/Disclosure under Reg 23(9).pdf" },
                         ],
                     },
 
                     {
                         title: "Financial Year 2023-24",
                         reports: [
-                            { label: "Outcome of Board Meeting 2023-24", link: "" },
-                            { label: "Outcome of Board Meeting-11.08.2023", link: "" },
-                            { label: "Outcome of Board Meeting-10.11.2023", link: "" },
+                            { label: "Outcome of Board Meeting 2023-24", link: "/pdf/corporate-announcements/corporate-announcements/Outcome_of_Board_Meeting_KPL_23_24.pdf" },
+                            { label: "Outcome of Board Meeting-11.08.2023", link: "/pdf/corporate-announcements/corporate-announcements/Outcome_Board_Meeting_11_08_2023.pdf" },
+                            { label: "Outcome of Board Meeting-10.11.2023", link: "/pdf/corporate-announcements/corporate-announcements/Outcome_Board_Meeting_10_11_2023.pdf" },
                         ],
                     },
                 ],

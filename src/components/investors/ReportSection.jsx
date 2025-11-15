@@ -80,7 +80,7 @@ const ReportSection = () => {
                     key={i}
                     className={`report_row ${i % 2 !== 0 ? "transparent" : ""}`}
                   >
-                    <a href={report.link || "#"} target="_blank">
+                    <a href={report.link || "#"} target="_blank" rel="noopener noreferrer">
                       <span>{report.label}</span>
                     </a>
                   </div>
@@ -91,7 +91,7 @@ const ReportSection = () => {
                 <div
                   className={`report_row ${idx % 2 !== 0 ? "transparent" : ""}`}
                 >
-                  <a href={block.link || "#"} target="_blank">
+                  <a href={block.link || "#"} target="_blank" rel="noopener noreferrer">
                     <span>{block.year}</span>
                   </a>
                 </div>
