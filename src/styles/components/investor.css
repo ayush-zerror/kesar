@@ -26,7 +26,6 @@
   color: #000000b3;
 }
 
-
 /* report_section */
 
 #report_section {
@@ -35,9 +34,6 @@
   padding: 0.5rem 3.5rem;
   padding-top: 2rem;
 }
-
-
-
 
 #investor_filter_wrap {
   width: 100%;
@@ -112,8 +108,8 @@
   overflow: hidden;
   overflow-x: auto;
 }
-#report_filter::-webkit-scrollbar{
-    display: none;
+#report_filter::-webkit-scrollbar {
+  display: none;
 }
 #report_filter span {
   padding: 1rem;
@@ -139,7 +135,7 @@
   color: rgba(0, 0, 0, 0.7);
   font-family: para-regular;
   font-size: 0.9rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 500;
   line-height: 1;
 }
@@ -168,18 +164,69 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-.report_row:hover a{
-    color: #004dff;
+.report_row:hover a {
+  color: #004dff;
 }
-.report_row p{
+.report_row p {
   line-height: 1.5;
 }
-.report_row strong{
-     letter-spacing: 0.5px;
+.report_row strong {
+  letter-spacing: 0.5px;
   color: rgb(0, 0, 0);
   font-family: para-bold;
   font-size: 1.1rem;
   font-weight: 900;
   padding: 1rem 0;
   display: inline-block;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #investor_hero {
+    padding: calc(65px + 4rem) 1rem 0.5rem;
+    overflow: hidden;
+  }
+  #investor_hero_title h4 {
+    font-size: 2rem;
+  }
+  #investor_filter_wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+  #report_section {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem 0.5rem;
+  }
+  #report_header {
+    gap: 1rem;
+    align-items: flex-start;
+    white-space: nowrap;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #report_filter {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .report_row{
+    line-height: 1.4;
+  }
+}
+
+/* Bigger phones + small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Tablets + small laptops */
+@media (min-width: 769px) and (max-width: 1285px) {
+}
+
+/* Large screens */
+@media (min-width: 1286px) {
 }

@@ -10,6 +10,7 @@ const AboutHeroSection = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    if(window.innerWidth <= 480) return;
     const image = imageRef.current;
     const section = sectionRef.current;
 
@@ -36,7 +37,7 @@ const AboutHeroSection = () => {
     <div id="about_hero" ref={sectionRef} className="relative overflow-hidden">
       <div id="about_hero_container" className="relative">
         {/* Parallax Image */}
-        <div ref={imageRef} className="absolute inset-0 will-change-transform">
+        <div ref={imageRef} className="image_container">
           <Image
             width={1920}
             height={1080}

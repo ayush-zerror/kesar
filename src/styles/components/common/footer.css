@@ -3,7 +3,7 @@ footer {
   padding: 1.5rem 3.5rem 0;
   font-size: 0.8rem;
   line-height: 22px;
-  font-family:para-regular;
+  font-family: para-regular;
   font-weight: 400;
 }
 footer h5 {
@@ -76,26 +76,26 @@ footer a {
 #footer-mid .footer-left a svg {
   color: #ff7006;
 }
-.newsletter{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: .8rem;
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
 }
-.newsletter input{
-    width: 65%;
-    background-color: transparent;
-    outline: none;
-    padding: .8rem;
-    border: 1px solid #0000004D;
-    border-radius: 10px;
+.newsletter input {
+  width: 65%;
+  background-color: transparent;
+  outline: none;
+  padding: 0.8rem;
+  border: 1px solid #0000004d;
+  border-radius: 10px;
 }
 #footer-btm {
   padding: 1.2rem 0;
   border-top: 1px solid #ff7006;
   color: #00000080;
 }
-#footer-btm .footer-left span{
+#footer-btm .footer-left span {
   font-weight: 800;
 }
 #footer-btm .footer-right {
@@ -109,4 +109,63 @@ footer a {
 }
 #footer-btm .footer-right a {
   color: #00000080;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  footer {
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+  }
+  #footer-top,
+  #footer-mid,
+  #footer-btm {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+  .footer-left p br {
+    display: none;
+  }
+  #footer-top .footer-right {
+    flex-wrap: wrap;
+  }
+  #footer-top .footer-right div {
+    width: 50%;
+    margin-top: 2rem;
+  }
+  #footer-mid {
+    gap: 2rem;
+  }
+  .newsletter {
+    flex-wrap: wrap;
+  }
+  .newsletter input {
+    width: 100%;
+  }
+  .newsletter .button {
+    width: 100%;
+    max-width: 100%;
+  }
+  #footer-btm .footer-right {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #footer-btm .footer-right div {
+    justify-content: space-between;
+  }
+}
+
+/* Bigger phones + small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Tablets + small laptops */
+@media (min-width: 769px) and (max-width: 1285px) {
+}
+
+/* Large screens */
+@media (min-width: 1286px) {
 }

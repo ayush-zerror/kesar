@@ -14,7 +14,6 @@
   gap: 2rem;
 }
 
-
 #contact_section_container form {
   width: 45%;
   height: 100%;
@@ -96,4 +95,36 @@
   height: 100%;
   display: block;
   flex-grow: 1;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #contact_section {
+    padding: 65px 1rem 0.5rem;
+  }
+  #contact_section_container {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+  #contact_section_container form {
+    width: 100%;
+  }
+  #contact_section_container form h5 {
+    font-size: 2rem;
+  }
+  #contact_map {
+    width: 100%;
+  }
+}
+
+/* Bigger phones + small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Tablets + small laptops */
+@media (min-width: 769px) and (max-width: 1285px) {
+}
+
+/* Large screens */
+@media (min-width: 1286px) {
 }

@@ -148,3 +148,22 @@ body {
 .button.size {
   width: 220px;
 }
+
+
+main{
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {}
+
+/* Bigger phones + small tablets */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* Tablets + small laptops */
+@media (min-width: 769px) and (max-width: 1285px) {}
+
+/* Large screens */
+@media (min-width: 1286px) {}

@@ -150,7 +150,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  align-items:stretch;
+  align-items: stretch;
 }
 
 .leadership_section_card {
@@ -162,8 +162,8 @@
   border-radius: 20px;
   height: 100%;
 }
-.leadership_section_card.last{
-    gap: 2rem;
+.leadership_section_card.last {
+  gap: 2rem;
 }
 .leader_profile_wrap {
   width: 100%;
@@ -172,7 +172,6 @@
   align-items: center;
   position: relative;
 }
-
 
 .leader_profile {
   width: 100px;
@@ -183,15 +182,15 @@
   display: flex;
   align-items: flex-end;
 }
-.leadership_section_card.last .leader_profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.leadership_section_card.last .leader_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.leadership_section_card:nth-child(3) .leader_profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.leadership_section_card:nth-child(3) .leader_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .profile_name p {
   font-family: para-bold;
@@ -209,10 +208,10 @@
   line-height: 1.4;
   color: #00000080;
 }
-.leadership_section_card.last .mentor{
-      font-family: para-regular;
+.leadership_section_card.last .mentor {
+  font-family: para-regular;
   font-weight: 400;
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 0.5px;
   line-height: 1.4;
   color: #ff7006;
@@ -221,13 +220,13 @@
   right: 0;
 }
 
-.leadership_section_card.last img{
-    width: 1.8rem;
-    height: auto;
+.leadership_section_card.last img {
+  width: 1.8rem;
+  height: auto;
 }
-.leadership_section_card:nth-child(3) img{
-     width: 1.8rem;
-    height: auto;
+.leadership_section_card:nth-child(3) img {
+  width: 1.8rem;
+  height: auto;
 }
 .leader_profile img {
   width: 100%;
@@ -244,4 +243,96 @@
   color: #000;
   margin-bottom: 0.1rem;
   width: 90%;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #about_hero {
+    padding: 65px 1rem 0.5rem;
+  }
+  #about_hero_overlay {
+    padding: 5rem 1rem;
+  }
+  #about_hero_overlay h2 {
+    font-size: 1.6rem;
+  }
+  .about_hero_dets {
+    padding-left: 0%;
+  }
+  .image_container {
+    width: 100%;
+    height: 100%;
+  }
+  .about_info_card:after {
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 0;
+    width: 5rem;
+    height: 1px;
+  }
+
+  #leadership_section {
+    padding: 0.5rem 1rem;
+  }
+  #leadership_section_container {
+    padding: 2rem 1rem;
+  }
+  #leadership_section_header h4 {
+    font-size: 2rem;
+  }
+  #about_info {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  #about_info_container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .leader_description {
+    width: 100%;
+    margin: 1rem;
+    margin-bottom: 0.1rem;
+    padding-left: 0;
+    font-size: 1rem;
+  }
+  .leader_profile {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+  }
+  .leadership_section_card {
+    padding: 2rem 1rem;
+  }
+  .leadership_section_card.last .mentor {
+    top: -1rem;
+    right: 0;
+  }
+  #leadership_section_header {
+    flex-direction: column;
+  }
+  #leadership_section_cards {
+    grid-template-columns: repeat(1, 100%);
+    margin-top: 1rem;
+  }
+  .leader_description {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .profile_name span {
+    font-size: 0.8rem;
+  }
+}
+
+/* Bigger phones + small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Tablets + small laptops */
+@media (min-width: 769px) and (max-width: 1285px) {
+}
+
+/* Large screens */
+@media (min-width: 1286px) {
 }

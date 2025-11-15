@@ -11,7 +11,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <>
+    <main>
       <HeroSection />
       <ProductFinder />
       <LogoSection />
@@ -21,7 +21,7 @@ const Home = () => {
       <Sustainability/>
       <LatestNews />
       <GallerySection />
-    </>
+    </main>
   )
 }
 
